@@ -1,0 +1,44 @@
+@use 'sass:color';
+@use '@material/theme/color-palette';
+
+$background: #faf9f6;
+$foreground_gray: #2b2b2b;
+$dark_teal: #114d5f;
+$med_teal: #8fd7e0;
+$light_teal: #d2f3f7;
+$dark_yellow: #9b810b;
+$light_yellow: #fbe093;
+
+// Import the mixins.
+@use '@material/theme/index' as theme with (
+  $primary: $background,
+  $secondary: $light_yellow,
+  $surface: $med_teal,
+  $background: $dark-teal,
+  $error: #b00020
+);
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Yeseva+One&display=swap');
+
+html,
+body {
+  background-color: $dark-teal;
+  color: if(theme.contrast-tone($dark-teal) == 'dark', $background, $dark-teal);
+}
+
+h1 {
+  font-family: 'Yeseva One', serif;
+  color: $light-yellow;
+  text-align: center;
+}
+
+h5, h6, div {
+  font-family: 'Josefin Sans', sans-serif !important;
+}
+
+a {
+  color: $background;
+}
+a:visited {
+  color: $light-yellow;
+}
