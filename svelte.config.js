@@ -5,3 +5,17 @@ export default {
   // for more information about preprocessors
   preprocess: vitePreprocess(),
 }
+
+// TODO: Bundle Size Optimization
+// const config = {
+//   kit: {
+//     vite: {
+//       optimizeDeps: {
+//         include: ['echarts'],
+//       },
+//       ssr: {
+//         noExternal: ['echarts']
+//       },
+//     },
+//   }
+// }

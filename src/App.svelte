@@ -14,7 +14,7 @@
 
 <main>
   <h1>Title</h1>
-  <div>
+  <div class='tab-div'>
     <TabBar tabs={TABS} let:tab bind:active>
       <Tab {tab}>
         <Label>{tab}</Label>
@@ -38,6 +38,11 @@
 </main>
 
 <style>
+  .tab-div {
+    max-width: 1260px;
+    margin: 0 auto;
+  }
+
   #footer {
   position:fixed;
   text-align: center;

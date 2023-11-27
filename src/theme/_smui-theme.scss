@@ -24,15 +24,24 @@ html,
 body {
   background-color: $dark-teal;
   color: if(theme.contrast-tone($dark-teal) == 'dark', $background, $dark-teal);
+  padding: 20px;
 }
 
-h1 {
+h1, h2, h3, h4 {
   font-family: 'Yeseva One', serif;
-  color: $light-yellow;
   text-align: center;
 }
 
+h1 {
+  color: $light-yellow;
+}
+
+h2, h3, h4 {
+  color: $dark-yellow;
+}
+
 h5, h6, div {
+  color: $dark-teal;
   font-family: 'Josefin Sans', sans-serif !important;
 }
 
