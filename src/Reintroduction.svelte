@@ -1,9 +1,6 @@
 <script>
 	// @ts-nocheck
 
-	// Svelte / SvelteMUI Imports
-	import { onMount, onDestroy } from 'svelte';
-	import Paper, { Title, Subtitle, Content } from '@smui/paper';
 	import { Chart } from 'svelte-echarts';
 
 	const sankeyLineStyle = { color: 'target', opacity: 0.7 };
@@ -56,59 +53,27 @@
 
 </script>
 
-<div class="paper-container">
-	<Paper variant="unelevated" color="primary">
-		<Content>Content</Content>
-		<div class="card-container">
-			<div class="card">
-				<h1>Cow's Milk Sankey</h1>
-				<div class="chart">
-					<Chart class="chart" { options } />
-				</div>
-			</div>
-			<div class="card">
-				<h1>Information About Sankey</h1>
-				<h2>To-Do</h2>
-				<p>Add content here</p>
-				<p>Change abs values to percentages</p>
-				<p>Add numerical labels to links</p>
-				<p>Check contrast</p>
-				<p>Add additional diagrams</p>
-				<p>Chart resizing on small screens</p>
+<div class="tab-content">
+	<div class="card-container">
+		<div class="card">
+			<h2>Cow's Milk Sankey</h2>
+			<div class="chart">
+				<Chart class="chart" { options } />
 			</div>
 		</div>
-		<Content>Content</Content>
-	</Paper>
+		<div class="card">
+			<h2>Information About Sankey</h2>
+			<br>
+			<h2>To-Do</h2>
+			<p>Add content</p>
+			<p>Change abs values to percentages</p>
+			<p>Add numerical labels to links</p>
+			<p>Check contrast</p>
+			<p>Add additional diagrams</p>
+		</div>
+	</div>
 </div>
 
-<style>
-	.paper-container{
-		margin: 0 auto;
-	}
-
-	.card-container {
-		display: flex;
-		flex-wrap: wrap;
-		margin: 0 auto;
-		justify-content: center;
-	}
-
-	.card {
-		padding: 20px 30px;
-		min-width: 45%;
-		background-color: #faf9f6;
-	}
-
-	.chart {
-		height: 50vh;
-		width: 100%;
-	}
-
-	* {
-		padding: 0;
-		margin: 0;
-	  	-webkit-box-sizing: border-box;
-		-moz-box-sizing: border-box;
-		box-sizing: border-box;
-	}
+<style lang='scss'>
+	@import './theme/style.scss';
 </style>
