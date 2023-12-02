@@ -22,9 +22,9 @@ $light_yellow: #fbe093;
 
 html,
 body {
-  // background-color: $dark-teal;
+  background-color: $dark-teal;
   color: if(theme.contrast-tone($dark-teal) == 'dark', $background, $dark-teal);
-  // padding: 20px;
+  padding: 20px;
 }
 
 // h1, h2, h3, h4 {
