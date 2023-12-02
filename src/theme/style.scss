@@ -21,7 +21,7 @@ $light_yellow: #fbe093;
 html,
 body {
   background-color: $dark-teal;
-  // color: if(theme.contrast-tone($dark-teal) == 'dark', $background, $dark-teal);
+  color: if(theme.contrast-tone($dark-teal) == 'dark', $background, $dark-teal);
   padding: 20px;
 }
 
