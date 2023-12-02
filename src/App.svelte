@@ -44,12 +44,12 @@
   }
 
   #footer {
-  position:fixed;
-  text-align: center;
-  left:0px;
-  bottom:0px;
-  height:30px;
-  width:100%;
-  background:#114d5f;
-}
+    position:fixed;
+    text-align: center;
+    left:0px;
+    bottom:0px;
+    height:30px;
+    width:100%;
+    background:#114d5f;
+  }
 </style>

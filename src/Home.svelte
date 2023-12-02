@@ -29,6 +29,9 @@
 		]
 	};
 
+	let pieChart;
+	window.onresize = function() { window.echarts.getInstanceById(pieChart).resize(); }
+
 </script>
 
 <div class="paper-container">
@@ -46,7 +49,7 @@
 				<h1>for Chestfeeding</h1>
 				<h1>Infants with Allergies</h1>
 				<div class="chart">
-					<Chart class="chart" { options } />
+					<Chart class="chart" { options } bind:this={pieChart}/>
 				</div>
 			</div>
 			<div class="card">
@@ -92,9 +95,8 @@
 	}
 
 	.chart {
-		height: 450px;
-		width: 600px;
-		/* object-fit: cover; */
+		height: 50vh;
+		width: 100%;
 	}
 
 	* {

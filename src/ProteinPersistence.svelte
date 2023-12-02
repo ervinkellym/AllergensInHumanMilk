@@ -3,47 +3,55 @@
 	import { onMount } from 'svelte';
 	import Paper, { Title, Subtitle, Content } from '@smui/paper';
 	import Dialog, { Actions } from '@smui/dialog';
+	import Checkbox from '@smui/checkbox';
+  	import FormField from '@smui/form-field';
   	import Button, { Label } from '@smui/button';
 	import { Chart } from 'svelte-echarts'
 
+	let chart1, chart2;
+
+	let gaugeData, options;
+
 	let open = false;
 
-	const gaugeData = [
-	{
-		value: 8,
-		name: 'Perfect',
-		title: {
-		offsetCenter: ['0%', '-30%']
-		},
-		detail: {
-		valueAnimation: true,
-		offsetCenter: ['0%', '-20%']
-		}
-	},
-	{
-		value: 4,
-		name: 'Good',
-		title: {
-		offsetCenter: ['0%', '0%']
-		},
-		detail: {
-		valueAnimation: true,
-		offsetCenter: ['0%', '10%']
-		}
-	},
-	{
-		value: 16,
-		name: 'Commonly',
-		title: {
-		offsetCenter: ['0%', '30%']
-		},
-		detail: {
-		valueAnimation: true,
-		offsetCenter: ['0%', '40%']
-		}
-	}];
+	let eggChecked = true;
+	let milkChecked = false;
+	let wheatChecked = false;
+	let peanutChecked = false;
 
-	const options = { series: [{
+	function handleChange() {
+		// console.log("Checkbox options changed..");
+		return;
+	}
+
+	$: peakData = [
+		{
+			value: 4, name: "Cow's Milk",
+			title: { offsetCenter: ['0%', '-30%'] },
+			detail: { valueAnimation: true, offsetCenter: ['0%', '-20%'] },
+			itemStyle: { opacity: milkChecked },
+		},
+		{
+			value: 2, name: 'Egg',
+			title: { offsetCenter: ['0%', '0%'] },
+			detail: { valueAnimation: true, offsetCenter: ['0%', '10%'] },
+			itemStyle: { opacity: eggChecked },
+		},
+		{
+			value: 8, name: 'Wheat',
+			title: { offsetCenter: ['0%', '30%'] },
+			detail: { valueAnimation: true, offsetCenter: ['0%', '40%'] },
+			itemStyle: { opacity: wheatChecked },
+		},
+		{
+			value: 8, name: 'Peanut',
+			title: { offsetCenter: ['0%', '30%'] },
+			detail: { valueAnimation: true, offsetCenter: ['0%', '40%'] },
+			itemStyle: { opacity: peanutChecked },
+		}							
+	];
+
+	$: peakOptions = { series: [{
 		type: 'gauge',
 		min: 0, max: 24, splitNumber: 8,
 		startAngle: 90, endAngle: -270,
@@ -57,8 +65,64 @@
 		axisLine: { lineStyle: { width: 40 } },
 		splitLine: { show: true, distance: 0, length: 10 },
 		axisTick: { show: true, distance: 0, splitNumber: 3 },
-		axisLabel: { show: true, distance: 50 },
-		data: gaugeData,
+		axisLabel: { 
+			show: true, 
+			distance: 50, 
+			formatter: function(value) { return value == 0 ? '' : value; } 
+		},
+		data: peakData,
+		title: { show: false },
+		detail: { show: false },
+	}]
+	};
+
+	$: untraceableData = [
+		{
+			value: 8, name: "Cow's Milk",
+			title: { offsetCenter: ['0%', '-30%'] },
+			detail: { valueAnimation: true, offsetCenter: ['0%', '-20%'] },
+			itemStyle: { opacity: milkChecked },
+		},
+		{
+			value: 4, name: 'Egg',
+			title: { offsetCenter: ['0%', '0%'] },
+			detail: { valueAnimation: true, offsetCenter: ['0%', '10%'] },
+			itemStyle: { opacity: eggChecked },
+		},
+		{
+			value: 16, name: 'Wheat',
+			title: { offsetCenter: ['0%', '30%'] },
+			detail: { valueAnimation: true, offsetCenter: ['0%', '40%'] },
+			itemStyle: { opacity: wheatChecked },
+		},
+		{
+			value: 16, name: 'Peanut',
+			title: { offsetCenter: ['0%', '30%'] },
+			detail: { valueAnimation: true, offsetCenter: ['0%', '40%'] },
+			itemStyle: { opacity: peanutChecked },
+		}							
+	];
+
+	$: untraceableOptions = { series: [{
+		type: 'gauge',
+		min: 0, max: 24, splitNumber: 8,
+		startAngle: 90, endAngle: -270,
+		pointer: { show: false },
+		progress: {
+			show: true,
+			overlap: false,
+			roundCap: true,
+			itemStyle: { borderWidth: 1, borderColor: '#2b2b2b' }
+		},
+		axisLine: { lineStyle: { width: 40 } },
+		splitLine: { show: true, distance: 0, length: 10 },
+		axisTick: { show: true, distance: 0, splitNumber: 3 },
+		axisLabel: { 
+			show: true, 
+			distance: 50, 
+			formatter: function(value) { return value == 0 ? '' : value; } 
+		},
+		data: untraceableData,
 		title: { show: false },
 		detail: { show: false },
 	}]
@@ -72,28 +136,51 @@
 			<Title>Protein Persistence</Title>
 			<Subtitle>Subtitle</Subtitle>
 			<Content>Content</Content>
+			<div>
+				<FormField>
+					<Checkbox bind:checked = { milkChecked } on:change = { handleChange } />
+					<span slot="label">Cow's Milk</span>
+					<Button variant="raised" on:click = { () => (open = true) }>More About Cow's Milk</Button>
+				</FormField>
+				<FormField>
+					<Checkbox bind:checked = { eggChecked } on:change = { handleChange } />
+					<span slot="label">Egg</span>
+					<Button variant="raised" on:click = { () => (open = true) }>More About Egg</Button>
+				</FormField>
+				<FormField>
+					<Checkbox bind:checked = { wheatChecked } on:change = { handleChange } />
+					<span slot="label">Wheat</span>
+					<Button variant="raised" on:click = { () => (open = true) }>More About Wheat</Button>
+				</FormField>
+				<FormField>
+					<Checkbox bind:checked = { peanutChecked } on:change = { handleChange } />
+					<span slot="label">Peanut</span>
+					<Button variant="raised" on:click = { () => (open = true) }>More About Peanut</Button>
+				</FormField>
+			</div>
+			<br>
 			<div class="card-container">
 				<div class="card">
-					<h1>Chart 1</h1>
+					<h1>Peak Amount</h1>
 					<div class="chart">
-						<Chart class="chart" { options } />
+						<Chart class="chart" options = { peakOptions } bind:this = { chart1 }/>
 					</div>
 				</div>
 				<div class="card">
-					<h1>Chart 2</h1>
+					<h1>Untraceable Amount</h1>
 					<div class="chart">
-						<Chart class="chart" { options } />
+						<Chart class="chart" options = { untraceableOptions } bind:this = { chart2 }/>
 					</div>
+					<Button on:click = { () => (console.log('Button Clicked')) }> </Button>
 				</div>
-				<div class="card">
-					<h2>To-Do</h2>
-					<p>Add checkbox options for dials here</p>
-					<p>Center dials in their cards</p>
-					<p>Fix the 0/24 overlap on dials</p>
-					<p>Change dial colors</p>
-					<p>Add actual separate data & dynamics</p>
-					<Button variant="raised" class="button-shaped-round" on:click = { () => (open = true) }>Click Me!</Button>
-				</div>
+			</div>
+			<br>
+			<div>
+				<h2>To-Do</h2>
+				<p>Change dial colors (and lots of other colors)</p>
+				<p>Add actual data</p>
+				<p>Dynamic content in pop-ups</p>
+				<p>Add content</p>
 			</div>
 		</Paper>
 	</div>
@@ -131,8 +218,9 @@
 	}
 
 	.card {
+		/* min-width: 30%; */
 		display: inline;
-		padding: 20px 30px;
+		/* padding: 20px 30px; */
 		background-color: #faf9f6;
 		border-radius: 5px;
 		box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);
@@ -146,14 +234,10 @@
 	.card:nth-of-type(2){
 		flex: 1 300px;
 	}
-	
-	.card:nth-of-type(3){
-		flex: 1 300px;
-	}
 
 	.chart {
-		height: 300px;
-		width: 300px;
+		height: 50vh;
+		width: 100%;
 	}
 
 	p {

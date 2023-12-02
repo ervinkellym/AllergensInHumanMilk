@@ -31,11 +31,10 @@
 		background-color: #faf9f6;
 	}
 
-	.chart {
-		height: 450px;
-		width: 600px;
-		/* object-fit: cover; */
-	}
+	/* .chart {
+		height: 300px;
+		width: 100%;
+	} */
 
 	* {
 		padding: 0;

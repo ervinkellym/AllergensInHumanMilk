@@ -95,13 +95,13 @@
 
 	.card {
 		padding: 20px 30px;
+		min-width: 45%;
 		background-color: #faf9f6;
 	}
 
 	.chart {
-		height: 450px;
-		width: 600px;
-		/* object-fit: cover; */
+		height: 50vh;
+		width: 100%;
 	}
 
 	* {
