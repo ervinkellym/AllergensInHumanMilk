@@ -54,26 +54,30 @@
 </script>
 
 <div class="tab-content">
-	<div class="card-container">
-		<div class="card">
-			<h2>Cow's Milk Sankey</h2>
-			<div class="chart">
-				<Chart class="chart" { options } />
+	<div>
+		<h2>Outgrowing & Reintroducing Infant Food Allergies</h2>
+		<p>[Content about children outgrowing infant food allergies]</p>
+	</div>
+	<div>
+		<div class="card-container">
+			<div class="card">
+				<h3>How Many Children Outgrow Cow's Milk Allergies by Age 3?</h3>
+				<div class="chart">
+					<Chart class="chart" { options } />
+				</div>
+			</div>
+			<div class="card">
+				<p>[How to read this chart, information about the study it is derived from]</p>
 			</div>
 		</div>
-		<div class="card">
-			<h2>Information About Sankey</h2>
-			<br>
-			<h2>To-Do</h2>
-			<p>Add content</p>
-			<p>Change abs values to percentages</p>
-			<p>Add numerical labels to links</p>
-			<p>Check contrast</p>
-			<p>Add additional diagrams</p>
-		</div>
+	</div>
+	<div>
+		<h3>Food Reintroduction Ladders</h3>
+		<p>[Explanation of reintroduction ladders]</p>
+		<p>[Links to ladders (ideally reformatted for consistency and displayed in this site)]</p>
 	</div>
 </div>
-
+x
 <style lang='scss'>
 	@import './theme/style.scss';
 </style>

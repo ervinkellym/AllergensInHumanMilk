@@ -1,15 +1,35 @@
 <script>
-	import Paper, { Title, Subtitle, Content } from '@smui/paper';
+	import YellowChestfeeding from '/src/assets/YellowChestfeeding.jpeg';
 </script>
 
 <div class="tab-content">
-	<h1>Heading 1</h1>
-	<h2>Heading 2</h2>
-	<h3>Heading 3</h3>
-	<h4>Heading 4</h4>
-	<h5>Heading 5</h5>
-	<span>Span</span>
-	<p>Paragraph</p>
+	<h2>Types of Infant Food Reactivity and Their Signs & Symptoms</h2>
+	<div class='text-img-container'>
+		<div class='text-with-img'>
+			<h3>Infant Food Allergies</h3>
+			<h4>Immediate Reactions</h4>
+			<p>[Content]</p>
+			<h4>Delayed Reactions</h4>
+			<p>[Content]</p>
+		</div>
+		<div class='img-with-text'>
+			<img src={ YellowChestfeeding } alt=''>
+		</div>
+	</div>
+	<div class='text-img-container'>
+		<div class='text-with-img'>
+			<h3>G.E.R.D</h3>
+			<h4>[spell it out]</h4>
+			<p>[Content]</p>
+			<h3>[Others]</h3>
+			<h4>[Subtitle]</h4>
+			<p>[Content]</p>
+		</div>
+		<div class='img-with-text'>
+			<span>[use another image]</span>
+			<img src={ YellowChestfeeding } alt=''>
+		</div>
+	</div>
 </div>
 
 <style lang='scss'>

@@ -14,9 +14,9 @@
 					color: '#2b2b2b'
 				},
 				data: [
-					{ value: 63, name: 'No Dietary\nRestriction' },
-					{ value: 23, name: 'Avoidance\nof Allergen' },
-					{ value: 38, name: 'Concern Not\nAddressed' },
+					{ value: 51, name: 'No Dietary\nRestriction' },
+					{ value: 18, name: 'Avoidance\nof Allergen' },
+					{ value: 31, name: 'Concern Not\nAddressed' },
 				],
 				itemStyle: {
 					opacity: 0.7,
@@ -35,6 +35,7 @@
 </script>
 
 <div class="tab-content">
+	<h2>[Page Title]</h2>
 	<div class='text-img-container'>
 		<div class='text-with-img'>
 			<h3>What is this website?</h3>
@@ -57,58 +58,25 @@
 		<p>Information about how many children with allergies to different foods as infants will outgrow them as well as reintroduction ladders for major food allergens. This information can help you throughout your experience with infant and childhood food allergies.</p>
 
 		<h3>Why is this information important?</h3>
-		<p>Content</p>
+		<p>[Content]</p>
 		<div class="card-container">
 			<div class="card">
-				<h2>Physician Recommendations for Chestfeeding Infants with Allergies</h2>
+				<h3>Physician Recommendations for Chestfeeding Infants with Allergies</h3>
 				<div class="chart">
 					<Chart class="chart" { options } bind:this={pieChart}/>
 				</div>
 			</div>
+			<div class="card">
+				<p>[How to read this chart, information about the study it is derived from]</p>
+			</div>
 		</div>
-		<div>
-			<h3>Information About Pie Chart</h3>
-			<br>
-			<h3>To-Do</h3>
-			<p>Add content here</p>
-			<p>Add Percentage Labels</p>
-			<p>Change Tooltips to Percentages</p>
-			<p>Check contrast</p>
-			<p>Add additional diagrams</p>
-		</div>
-		<p>Content</p>
 	</div>
 	<div>
-		
-	</div>
-	<div>
-		<h3>What are the sources for the data?</h3>
-		<p>Content</p>
+		<h3>Where is the data from?</h3>
+		<p>[Content]</p>
 	</div>
 </div>
 
 <style lang='scss'>
 	@import './theme/style.scss';
-
-	.text-img-container {
-		display: flex;
-		align-items: center;
-  		justify-content: center;
-		flex-wrap: wrap;
-		margin: 0 auto;
-	}
-
-	.text-with-img {
-		display: inline;
-		justify-content: center;
-		flex: 1 300px;
-	}
-
-	.img-with-text {
-		img {
-			max-width: 90vw;
-			max-height: 50vh;
-		}
-		padding: 2vh 2vh 2vh 0vh;
-	}
 </style>

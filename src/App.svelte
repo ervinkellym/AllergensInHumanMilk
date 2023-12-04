@@ -1,6 +1,6 @@
 <script>
   // Svelte Material UI Components
-  import Tab, { Icon, Label } from '@smui/tab';
+  import Tab, { Label } from '@smui/tab';
   import TabBar from '@smui/tab-bar';
 
   // Import & set up tab card content
@@ -13,27 +13,27 @@
 </script>
 
 <main>
-  <h1>Title</h1>
+  <h1>[Title]</h1>
   <div class='tab-div'>
-    <TabBar tabs={TABS} let:tab bind:active>
-      <Tab {tab}>
-        <Label>{tab}</Label>
-      </Tab>
-    </TabBar>
-    {#if active === 'Home'}
-      <Home/>
-    {:else if active === 'Signs & Symptoms'}
-      <SignsSymptoms/>
-    {:else if active === 'Protein Persistence'}
-      <ProteinPersistence/>
-    {:else if active === 'Reintroduction'}
-      <Reintroduction/>
-    {:else}
-      <Home/>
-    {/if}
+      <TabBar tabs={TABS} let:tab bind:active>
+          <Tab {tab}>
+              <Label>{tab}</Label>
+          </Tab>
+      </TabBar>
+      {#if active === 'Home'}
+          <Home/>
+      {:else if active === 'Signs & Symptoms'}
+          <SignsSymptoms/>
+      {:else if active === 'Protein Persistence'}
+          <ProteinPersistence/>
+      {:else if active === 'Reintroduction'}
+          <Reintroduction/>
+      {:else}
+          <Home/>
+      {/if}
   </div>
   <div id="footer">
-    <a href="https://github.com/ervinkellym/AllergensInHumanMilk">about this project</a>
+    <a href="https://github.com/ervinkellym/AllergensInHumanMilk">about</a>
   </div>
 </main>
 
@@ -51,5 +51,8 @@
     height:30px;
     width:100%;
     background:#114d5f;
+    /* a {
+      padding-topp: 5px;
+    } */
   }
 </style>

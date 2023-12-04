@@ -19,23 +19,24 @@ $light_yellow: #fbe093;
 }
 
 h1, h2 {
-  font-family: 'Yeseva One', serif;
   text-align: center;
-  padding: 10px;
+}
+
+h1, h2, h3 {
+  font-family: 'Yeseva One', serif;
+  padding-top: 20px;
 }
 
 h1 { color: $light-yellow; }
 
 h2 { color: $dark-yellow; }
 
-h3 {
-    padding-top: 15px;
-}
+h3 { color: $dark-teal }
 
-h3, h4, h5, h6 {
+h4, h5, h6 {
     color: $dark-teal;
     font-family: 'Josefin Sans', sans-serif;
-    padding: 5px;
+    padding: 20px;
 }
 
 p, span  {
@@ -58,18 +59,22 @@ a:visited {
 
 .card-container {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     margin: 0 auto;
 }
 
 .card {
-    /* min-width: 30%; */
     display: inline;
-    /* padding: 20px 30px; */
     background-color: #faf9f6;
-    border-radius: 5px;
-    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);
+    // border-radius: 5px;
+    // box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);
     justify-content: center;
+    align-items: center;
+    h3 {
+        text-align: center;
+    }
 }
 
 .card:nth-of-type(1){
@@ -81,8 +86,10 @@ a:visited {
 }
 
 .chart {
+    justify-content: center;
     height: 50vh;
     width: 100%;
+    max-width: 600px;
 }
 
 p {
@@ -91,4 +98,26 @@ p {
  
 .button-shaped-round {
     @include mdc-button.shape-radius(100%);
+}
+
+.text-img-container {
+    display: flex;
+    align-items: center;
+      justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.text-with-img {
+    display: inline;
+    justify-content: center;
+    flex: 1 300px;
+}
+
+.img-with-text {
+    img {
+        max-width: 90vw;
+        max-height: 50vh;
+    }
+    padding: 2vh 2vh 2vh 0vh;
 }
