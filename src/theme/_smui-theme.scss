@@ -18,13 +18,16 @@ $light_yellow: #fbe093;
   $error: #b00020
 );
 
+@use "@material/tab/mdc-tab";
+
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Yeseva+One&display=swap');
+
 
 html,
 body {
   background-color: $dark-teal;
   color: if(theme.contrast-tone($dark-teal) == 'dark', $background-white, $dark-teal);
-  padding: 20px;
+  padding: 2px;
 }
 
 h1, h2 {
@@ -55,6 +58,18 @@ p, span  {
 a {
   color: $background-white;
 }
+
 a:visited {
   color: $light-yellow;
+}
+
+.mdc-tab--active {
+  background-color: $background-white !important;
+  .mdc-tab__text-label {
+    color: $dark_teal !important;
+  }
+}
+
+.mdc-tab__text-label {
+  color: $background-white !important;
 }

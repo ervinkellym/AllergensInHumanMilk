@@ -43,6 +43,12 @@
     margin: 0 auto;
   }
 
+  .mat-tab-label-active {
+    background-color: #000;
+    color: #fff;
+    opacity: 1;
+}
+
   #footer {
     position:fixed;
     text-align: center;

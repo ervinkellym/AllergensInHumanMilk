@@ -2,28 +2,56 @@
 
 	import { Chart } from 'svelte-echarts';
 
+	let dark_teal = '#114d5f';
+	let med_teal = '#8fd7e0';
+	let light_teal = '#d2f3f7';
+	let dark_yellow = '#9b810b';
+	let light_yellow = '#fbe093';
+	let fg_gray = '#2b2b2b';
+
 	const options = {
-		tooltip: {},
+		tooltip: { 
+			trigger: 'item',
+			formatter: (param) => param.name + ' (' + param.percent * 2 + '%)'
+		},
+		legend: {
+			top: '5%',
+			left: 'center',
+			// doesn't perfectly work with our tricks, disable it
+			selectedMode: false
+		},
 		series: [
 			{
 				type: 'pie',
-				clockwise: true,
+				radius: ['40%', '70%'],
+				center: ['50%', '70%'],
+				startAngle: 180,
 				label: {
-					position: 'outside',
-					fontSize: 18,
-					color: '#2b2b2b'
+					show: true,
+					formatter(param) { return param.name + ' (' + param.percent * 2 + '%)'; }
 				},
 				data: [
-					{ value: 51, name: 'No Dietary\nRestriction' },
-					{ value: 18, name: 'Avoidance\nof Allergen' },
-					{ value: 31, name: 'Concern Not\nAddressed' },
-				],
-				itemStyle: {
-					opacity: 0.7,
-					color: '#8fd7e0',
-					borderWidth: 1,
-					borderColor: '#2b2b2b'
-				}
+					{ 
+						value: 51, name: 'No Dietary\nRestriction', 
+						itemStyle: { color: med_teal, borderColor: fg_gray } 
+					},
+					{ 
+						value: 18, name: 'Avoidance\nof Allergen', 
+						itemStyle: { color: light_yellow, borderColor: fg_gray } 
+					},
+					{ 
+						value: 31, name: 'Concern Not\nAddressed', 
+						itemStyle: { color: dark_yellow, borderColor: fg_gray } 
+					},
+					{
+						value: 100, // make an record to fill the bottom 50%
+						itemStyle: { // stop the chart from rendering this piece
+							color: 'none',
+							decal: { symbol: 'none' }
+						},
+						label: { show: false },
+					},
+				]
 			}
 		]
 	};
@@ -63,7 +91,7 @@
 			<div class="card">
 				<h3>Physician Recommendations for Chestfeeding Infants with Allergies</h3>
 				<div class="chart">
-					<Chart class="chart" { options } bind:this={pieChart}/>
+					<Chart { options } bind:this={pieChart}/>
 				</div>
 			</div>
 			<div class="card">
