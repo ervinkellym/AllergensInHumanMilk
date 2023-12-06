@@ -161,72 +161,74 @@
 
 <main>
 	<div class="tab-content">
-		<h2>How Long Do Allergenic Proteins Persist In My Milk?</h2>
-		<p>[how to use these gauges]</p>
-		<div class='card-container'>
-			<FormField>
-				<Checkbox bind:checked = { milkChecked }/>
-				<button 
-					slot="label" 
-					class="legend-element"
-					sr-only="More information about cow's milk protein transfer in human milk."
-					on:click = { () => (milkDialogOpen = true) }
-					style='
-						--bg-color: { milkChecked ? dark_teal : fg_white }; 
-						--fg-color: { milkChecked ? fg_white : fg_gray };
-				'>Cow's Milk &#9432</button>
-			</FormField>
-			<FormField>
-				<Checkbox bind:checked = { eggChecked }/>
-				<button 
-					slot="label" 
-					class="legend-element" 
-					sr-only="More information about egg protein transfer in human milk."
-					on:click = { () => (eggDialogOpen = true) }
-					style='
-						--bg-color: { eggChecked ? light_yellow : fg_white };
-						--fg-color: { fg_gray };
-				'>Egg &#9432</button>
-			</FormField>
-			<FormField>
-				<Checkbox bind:checked = { wheatChecked }/>
-				<button
-					slot="label"
-					class="legend-element"
-					sr-only="More information about wheat protein transfer in human milk."
-					on:click = { () => (wheatDialogOpen = true) }
-					style='
-						--bg-color: { wheatChecked ? med_teal : fg_white };
-						--fg-color: { fg_gray };
-				'>Wheat &#9432</button>
-			</FormField>
-			<FormField>
-				<Checkbox bind:checked = { peanutChecked }/>
-				<button 
-					slot="label"
-					class="legend-element"
-					sr-only="More information about peanut protein transfer in human milk."
-					on:click={() => peanutDialogOpen = true}
-					style='
-						--bg-color: { peanutChecked ? dark_yellow : fg_white };
-						--fg-color: { peanutChecked ? fg_white : fg_gray };
-				'>Peanut &#9432</button>
-			</FormField>
-		</div>
-		<br>
-		<div class="card-container">
-			<div class="card">
-				<h3>Peak Amount</h3>
-				<div class="chart" sr-only='TODO'>
-					<Chart options = { peakOptions } bind:this = { chart1 }/>
-				</div>
+		<div class='tab-inner'>
+			<h2>How Long Do Allergenic Proteins Persist In My Milk?</h2>
+			<p>[how to use these gauges]</p>
+			<div class='card-container'>
+				<FormField>
+					<Checkbox bind:checked = { milkChecked }/>
+					<button 
+						slot="label" 
+						class="legend-element"
+						sr-only="More information about cow's milk protein transfer in human milk."
+						on:click = { () => (milkDialogOpen = true) }
+						style='
+							--bg-color: { milkChecked ? dark_teal : fg_white }; 
+							--fg-color: { milkChecked ? fg_white : fg_gray };
+					'>Cow's Milk &#9432</button>
+				</FormField>
+				<FormField>
+					<Checkbox bind:checked = { eggChecked }/>
+					<button 
+						slot="label" 
+						class="legend-element" 
+						sr-only="More information about egg protein transfer in human milk."
+						on:click = { () => (eggDialogOpen = true) }
+						style='
+							--bg-color: { eggChecked ? light_yellow : fg_white };
+							--fg-color: { fg_gray };
+					'>Egg &#9432</button>
+				</FormField>
+				<FormField>
+					<Checkbox bind:checked = { wheatChecked }/>
+					<button
+						slot="label"
+						class="legend-element"
+						sr-only="More information about wheat protein transfer in human milk."
+						on:click = { () => (wheatDialogOpen = true) }
+						style='
+							--bg-color: { wheatChecked ? med_teal : fg_white };
+							--fg-color: { fg_gray };
+					'>Wheat &#9432</button>
+				</FormField>
+				<FormField>
+					<Checkbox bind:checked = { peanutChecked }/>
+					<button 
+						slot="label"
+						class="legend-element"
+						sr-only="More information about peanut protein transfer in human milk."
+						on:click={() => peanutDialogOpen = true}
+						style='
+							--bg-color: { peanutChecked ? dark_yellow : fg_white };
+							--fg-color: { peanutChecked ? fg_white : fg_gray };
+					'>Peanut &#9432</button>
+				</FormField>
 			</div>
-			<div class="card">
-				<h3>Untraceable Amount</h3>
-				<div class="chart" sr-only='TODO'>
-					<Chart options = { untraceableOptions } bind:this = { chart2 }/>
+			<br>
+			<div class="card-container">
+				<div class="card">
+					<h3>Peak Amount</h3>
+					<div class="chart" sr-only='TODO'>
+						<Chart options = { peakOptions } bind:this = { chart1 }/>
+					</div>
 				</div>
-				<Button on:click = { () => (console.log('Button Clicked')) }> </Button>
+				<div class="card">
+					<h3>Untraceable Amount</h3>
+					<div class="chart" sr-only='TODO'>
+						<Chart options = { untraceableOptions } bind:this = { chart2 }/>
+					</div>
+					<Button on:click = { () => (console.log('Button Clicked')) }> </Button>
+				</div>
 			</div>
 		</div>
 	</div>

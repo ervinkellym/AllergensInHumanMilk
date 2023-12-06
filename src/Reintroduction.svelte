@@ -24,26 +24,28 @@
 		},
 		series: [
 			{
-				data: [39, 17, 9, 7],
+				data: [100, 44, 23, 18],
 				type: 'bar',
 				stack: 'a',
 				name: 'Allergic',
 				label: {
-				show: true,
-				position: 'inside'
+					show: true,
+					position: 'inside',
+					formatter: (value) => { return value.value == 0 ? '' : value.value + '%'; }
 				},
-				itemStyle: { color: dark_yellow }
+				itemStyle: { color: dark_yellow, borderColor: bg_white }
 			},
 			{
-				data: [0, 22, 30, 32],
+				data: [0, 56, 77, 82],
 				type: 'bar',
 				stack: 'a',
 				name: 'Allergy Outgrown',
 				label: {
-				show: true,
-				position: 'inside'
+					show: true,
+					position: 'inside',
+					formatter: (value) => { return value.value == 0 ? '' : value.value + '%'; }
 				},
-				itemStyle: { color: dark_teal }
+				itemStyle: { color: dark_teal, borderColor: bg_white }
 			},
 		]
 	};
@@ -61,37 +63,40 @@
 		},
 		series: [
 			{
-				data: [0, 12, 32],
+				data: [0, 16, 43],
 				type: 'bar',
 				stack: 'a',
 				name: 'Did Not Challenge',
 				label: {
-				show: true,
-				position: 'inside'
+					show: true,
+					position: 'inside',
+					formatter: (value) => { return value.value == 0 ? '' : value.value + '%'; }
 				},
 				itemStyle: { color: bg_white, borderColor: fg_gray }
 			},
 			{
-				data: [56, 40, 20],
+				data: [75, 53, 27],
 				type: 'bar',
 				stack: 'a',
 				name: 'Allergic',
 				label: {
-				show: true,
-				position: 'inside'
+					show: true,
+					position: 'inside',
+					formatter: (value) => { return value.value == 0 ? '' : value.value + '%'; }
 				},
-				itemStyle: { color: dark_yellow }
+				itemStyle: { color: dark_yellow, borderColor: bg_white }
 			},
 			{
-				data: [19, 23, 23],
+				data: [25, 31, 30],
 				type: 'bar',
 				stack: 'a',
 				name: 'Allergy Outgrown',
 				label: {
-				show: true,
-				position: 'inside'
+					show: true,
+					position: 'inside',
+					formatter: (value) => { return value.value == 0 ? '' : value.value + '%'; }
 				},
-				itemStyle: { color: dark_teal }
+				itemStyle: { color: dark_teal, borderColor: bg_white }
 			},
 		]
 	};
@@ -124,47 +129,51 @@
 </script>
 
 <div class="tab-content">
-	<div>
-		<h2>Outgrowing & Reintroducing Infant Food Allergies</h2>
-		<p>[Content about children outgrowing infant food allergies]</p>
-	</div>
-	<div class="card-container">
-		<div class="card">
-			<h3>Children Outgrowing Cow's Milk Allergies</h3>
-			<div class="chart">
-				<Chart options = { milkOptions } />
+	<div class='tab-inner'>
+		<div>
+			<h2>Outgrowing & Reintroducing Infant Food Allergies</h2>
+			<p>[Content about children outgrowing infant food allergies]</p>
+		</div>
+		<div class="card-container">
+			<div class="card">
+				<h3>Cow's Milk Allergy Outgrowth for Children Ages 0-3</h3>
+				<div class="chart">
+					<Chart options = { milkOptions } />
+				</div>
+			</div>
+			<div class="card">
+				<p>(39 Participants)</p>
+				<p>[How to read this chart, information about the study it is derived from]</p>
 			</div>
 		</div>
-		<div class="card">
-			<p>[How to read this chart, information about the study it is derived from]</p>
-		</div>
-	</div>
-	<div class="card-container">
-		<div class="card">
-			<h3>Children Experiencing Atopic Dermatitis Outgrowing Food Hypersensitivities</h3>
-			<div class="chart">
-				<Chart options = { atopicOptions } />
+		<div class="card-container">
+			<div class="card">
+				<h3>Food Hypersensivity Outgrowth for Children Ages 0-3 Experiencing Atopic Dermatitis</h3>
+				<div class="chart">
+					<Chart options = { atopicOptions } />
+				</div>
+			</div>
+			<div class="card">
+				<p>(75 Participants)</p>
+				<p>[How to read this chart, information about the study it is derived from]</p>
 			</div>
 		</div>
-		<div class="card">
-			<p>[How to read this chart, information about the study it is derived from]</p>
-		</div>
-	</div>
-	<div class="card-container">
-		<div class="card">
-			<h3>Median Allergy Outgrowth Age in the First 8 Years of Life</h3>
-			<div class="chart">
-				<Chart options = { eightYearOptions } />
+		<div class="card-container">
+			<div class="card">
+				<h3>Median Allergy Outgrowth Age in the First 8 Years of Life</h3>
+				<div class="chart">
+					<Chart options = { eightYearOptions } />
+				</div>
+			</div>
+			<div class="card">
+				<p>[How to read this chart, information about the study it is derived from]</p>
 			</div>
 		</div>
-		<div class="card">
-			<p>[How to read this chart, information about the study it is derived from]</p>
+		<div>
+			<h3>Food Reintroduction Ladders</h3>
+			<p>[Explanation of reintroduction ladders]</p>
+			<p>[Links to ladders (ideally reformatted for consistency and displayed in this site)]</p>
 		</div>
-	</div>
-	<div>
-		<h3>Food Reintroduction Ladders</h3>
-		<p>[Explanation of reintroduction ladders]</p>
-		<p>[Links to ladders (ideally reformatted for consistency and displayed in this site)]</p>
 	</div>
 </div>
 x

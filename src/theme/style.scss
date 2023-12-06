@@ -35,7 +35,10 @@ h1, h2, h3 {
 
 h1 { color: $light-yellow; }
 
-h2 { color: $dark-yellow; }
+h2 { 
+    color: $dark-yellow; 
+    padding-top: 40px !important; 
+}
 
 h3 { color: $dark-teal }
 
@@ -48,6 +51,7 @@ h4, h5, h6 {
 a, a:visited, button, p, span  {
   color: $foreground_gray;
   font-family: 'Josefin Sans', sans-serif;
+  line-height: 140%;
 }
 
 a {
@@ -57,11 +61,18 @@ a:visited {
   color: $light-yellow;
 }
 
-.tab-content{
+.tab-content {
+    display: flex;
     padding: 10px;
     margin: 0 auto;
     background: $background;
-  }
+    justify-content: center;
+}
+
+.tab-inner {
+    margin: 0 auto;
+    max-width: 1000px;
+}
 
 .card-container {
     display: flex;
@@ -72,15 +83,13 @@ a:visited {
 }
 
 .card {
-    display: inline;
+    display: block;
     background-color: #faf9f6;
     // border-radius: 5px;
     // box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);
     justify-content: center;
     align-items: center;
-    h3 {
-        text-align: center;
-    }
+    h3 { text-align: center; }
 }
 
 .card:nth-of-type(1){
@@ -93,9 +102,9 @@ a:visited {
 
 .chart {
     justify-content: center;
-    height: 50vh;
+    height: 45vh;
     width: 100%;
-    max-width: 600px;
+    max-width: 500px;
 }
 
 p {
