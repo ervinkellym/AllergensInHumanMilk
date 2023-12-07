@@ -59,7 +59,7 @@
 		legend: { itemStyle: { borderColor: fg_gray }}, // FIXME
 		tooltip: {},
 		xAxis: {
-			name: 'Age',
+			name: 'Years',
 			nameLocation: 'center',
 			nameTextStyle: { fontSize: 14, padding: [20, 0, 0 , 0] },
 			type: 'category',
@@ -74,7 +74,7 @@
 				data: [0, 16, 43],
 				type: 'bar',
 				stack: 'a',
-				name: 'Did Not Challenge',
+				name: 'Didn\'t Test',
 				label: {
 					show: true,
 					position: 'inside',
@@ -98,7 +98,7 @@
 				data: [25, 31, 30],
 				type: 'bar',
 				stack: 'a',
-				name: 'Allergy Outgrown',
+				name: 'Outgrew Allergies',
 				label: {
 					show: true,
 					position: 'inside',
@@ -140,15 +140,17 @@
 		]
 	};
 
-
 </script>
 
 <div class="tab-content">
-	<div class='tab-inner' style="display:inline !important; align-content:center;">
-		<div>
-			<h2>Outgrowing & Reintroducing Infant Food Allergies</h2>
-			<p>Many children diagnosed with food sensitivities and allergies early in life will not be allergic all their lives. The timeline for outgrowing a food sensitivity or allergy depends heavily on the offending food, the severity of sensitivity/allergy, and the type of sensitivity/allergy. Below are results from three studies that followed food-allergic and sensitive children over several years to determine if and when they outgrew their sensitivities/allergies.</p>
+	<div class='tab-inner'>
+		<div class='wide-content-wrapper'>
+			<div class='wide-content'>
+				<h2>Outgrowing & Reintroducing Infant Food Allergies</h2>
+				<p>Many children diagnosed with food sensitivities and allergies early in life will not be allergic all their lives. The timeline for outgrowing a food sensitivity or allergy depends heavily on the offending food, the severity of sensitivity/allergy, and the type of sensitivity/allergy. Below are results from three studies that followed food-allergic and sensitive children over several years to determine if and when they outgrew their sensitivities/allergies.</p>
+			</div>
 		</div>
+		<br>
 		<div class="card-container">
 			<div class="card">
 				<h3 id="Cow's Milk Allergy Outgrowth Title">Cow's Milk Allergy Outgrowth for Children Ages 0-3</h3>
@@ -161,27 +163,40 @@
 				</div>
 			</div>
 			<div class="card" id="Cow's Milk Allergy Outgrowth Chart Description">
-				<p>This 1990 study published in the European Journal of Allergy and Clinical Immunology followed 39 children diagnosed with Cow's Milk Allergy before they were 1 year old. At ages one, two, and three, the children were re-tested for Cow's Milk Allergy using skin-prick and blood testing.</p>
+				<p>A 1990 study published in The European Journal of Allergy and Clinical Immunology followed 39 children diagnosed with Cow's Milk Allergy before they were 1 year old. At ages one, two, and three, the children were re-tested for Cow's Milk Allergy using skin-prick and blood testing.</p>
 				<ul>
 					<li>At age one, 22 (56%) of the children had outgrown their allergy.</li>
 					<li>At age two, 30 (77%) of the children had outgrown their allergy.</li>
 					<li>At age three, 32 (82%) of the children had outgrown their allergy.</li>
 				</ul>
-				<a href='https://pubmed.ncbi.nlm.nih.gov/2288394/' target='_blank'>[Source]</a>
+				<div class='center-text'>
+					<a href='https://pubmed.ncbi.nlm.nih.gov/2288394/' target='_blank'>[Source]</a>
+				</div>
 			</div>
 		</div>
+		<br>
 		<div class="card-container">
 			<div class="card">
-				<h3>Food Hypersensivity Outgrowth for Children Ages 0-3 Experiencing Atopic Dermatitis</h3>
+				<h3>Allergy Outgrowth for Children Ages 3-18 Experiencing Atopic Dermatitis Over 3 years</h3>
 				<div class="chart">
 					<Chart options = { atopicOptions } />
 				</div>
 			</div>
 			<div class="card">
-				<p>(75 Participants)</p>
-				<p>[How to read this chart, information about the study it is derived from]</p>
+				<p>A 1989 study published in The Journal of Pediatrics followed 75 children ages 3-18 with atopic dermatitis and at least one food allergy for three years. The children avoided their allergen(s) and, at yearly intervals, were re-tested for their food allergy with food challenges (consuming an allergen in a clinical setting and monitoring for a reaction).</p>
+				<ul>
+					<li>After one year, 19 (26%) of the children outgrew all allergies.</li>
+					<li>After two years, an additional 4 (5%) of the children outgrew all allergies.</li>
+					<li>After three years, no more children (0%) outgrew allergies.</li>
+				</ul>
+				<p>In total, 23 (31%) of the children outgrew all allergies. Some children did not participate in subsequent testing after the first year.</p>
+				<div class='center-text'>
+					<a href='https://pubmed.ncbi.nlm.nih.gov/2738792/' target='_blank'>[Source]</a>
+					<a href='https://sci-hub.se/10.1016/s0022-3476(89)80323-3' target='_blank'>[Full Text]</a>
+				</div>
 			</div>
 		</div>
+		<br>
 		<div class="card-container">
 			<div class="card">
 				<h3>Median Allergy Outgrowth Age in the First 8 Years of Life</h3>
@@ -193,6 +208,7 @@
 				<p>[How to read this chart, information about the study it is derived from]</p>
 			</div>
 		</div>
+		<br>
 		<div>
 			<h3>Food Reintroduction Ladders</h3>
 			<p>[Explanation of reintroduction ladders]</p>
@@ -200,7 +216,7 @@
 		</div>
 	</div>
 </div>
-x
+
 <style lang='scss'>
 	@import './theme/style.scss';
 </style>

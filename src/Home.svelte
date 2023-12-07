@@ -23,24 +23,25 @@
 		series: [
 			{
 				type: 'pie',
-				radius: ['40%', '70%'],
-				center: ['50%', '70%'],
+				radius: ['40%', '105%'],
+				center: ['50%', '85%'],
 				startAngle: 180,
 				label: {
 					show: true,
-					formatter(param) { return param.name + ' (' + param.percent * 2 + '%)'; }
+					position: 'inside',
+					formatter(param) { return param.percent * 2 + '%'; }
 				},
 				data: [
 					{ 
-						value: 51, name: 'No Dietary\nRestriction', 
+						value: 51, name: 'Don\'t Avoid Allergen', 
 						itemStyle: { color: med_teal, borderColor: fg_gray } 
 					},
 					{ 
-						value: 18, name: 'Avoidance\nof Allergen', 
+						value: 18, name: 'Avoid Allergen', 
 						itemStyle: { color: light_yellow, borderColor: fg_gray } 
 					},
 					{ 
-						value: 31, name: 'Concern Not\nAddressed', 
+						value: 31, name: 'Not Addressed', 
 						itemStyle: { color: dark_yellow, borderColor: fg_gray } 
 					},
 					{
@@ -66,10 +67,12 @@
 	<div class='tab-inner'>
 		<h2>[Page Title]</h2>
 		<div class='text-img-container'>
-			<div class='text-with-img'>
-				<h3>What is this website?</h3>
-				<p> This website is a resource for parents of chestfed infants who are experiencing infant food reactivity and have or are currently avoiding or considering avoiding certain foods their infant may be reacting to.</p>
-				<p>[Not Medical Advice Disclaimer]</p>
+			<div class='text-with-img wide-content-wrapper'>
+				<div class='wide-content'>
+					<h3>What is this website?</h3>
+					<p> This website is a resource for parents of chestfed infants who are experiencing infant food reactivity and have or are currently avoiding or considering avoiding certain foods their infant may be reacting to.</p>
+					<p>[Not Medical Advice Disclaimer]</p>
+				</div>
 			</div>
 			<div class='img-with-text'>
 				<img src={ YellowBlueChestfeeding } alt=''>

@@ -27,26 +27,26 @@ html, body {
     -webkit-overflow-scrolling: touch;
 }
 
-h1, h2 {
-  text-align: center;
+h1 {
+    color: $light-yellow;
+    padding-top: 5px;
 }
 
 h1, h2, h3 {
-  font-family: 'Yeseva One', serif;
-  padding: 20px;
+    font-family: 'Yeseva One', serif;
+    text-align: center;
 }
 
-h1 { color: $light-yellow; }
-
-h2 { 
-    color: $dark-yellow; 
-    padding-top: 40px !important; 
+h2, h3 {
+    padding-top: 40px !important;
+    padding: 20px;
 }
 
-h3 { color: $dark-teal }
+h2 {  color: $dark-yellow; }
+
+h3, h4, h5, h6 { color: $dark-teal; }
 
 h4, h5, h6 {
-    color: $dark-teal;
     font-family: 'Josefin Sans', sans-serif;
     padding: 20px;
 }
@@ -54,25 +54,17 @@ h4, h5, h6 {
 a, a:visited, button, p, span, ul, li  {
     color: $foreground_gray;
     font-family: 'Josefin Sans', sans-serif;
-    line-height: 140%;
+    line-height: 150%;
 }
 
-ul {
-    padding-left: 50px;
-}
+a, p, { padding: 20px; }
 
-a {
-    line-height: 350%;
-    padding: 20px;
-    color: $dark_teal;
-}
-a:visited {
-    color: $dark-yellow;
-}
+a { color: $dark_teal; }
+a:visited { color: $dark-yellow; }
 
-button {
-    cursor: pointer;
-}
+ul { padding: 0px 30px 20px 30px }
+
+button { cursor: pointer; }
 
 .tab-content {
     display: flex;
@@ -91,6 +83,14 @@ button {
     max-width: 1000px;
 }
 
+.wide-content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.wide-content { max-width: 800px; }
+
 .card-container {
     display: flex;
     align-items: center;
@@ -107,13 +107,9 @@ button {
     h3 { text-align: center; }
 }
 
-.card:nth-of-type(1){
-    flex: 1 300px;
-}
+.card:nth-of-type(1){ flex: 1 300px; }
 
-.card:nth-of-type(2){
-    flex: 1 300px;
-}
+.card:nth-of-type(2){ flex: 1 300px; }
 
 .chart {
     justify-content: center;
@@ -121,19 +117,13 @@ button {
     width: 100%;
     max-width: 500px;
 }
-
-p {
-    padding: 20px;
-}
  
-.button-shaped-round {
-    @include mdc-button.shape-radius(100%);
-}
+.button-shaped-round { @include mdc-button.shape-radius(100%); }
 
 .text-img-container {
     display: flex;
     align-items: center;
-      justify-content: center;
+    justify-content: center;
     flex-wrap: wrap;
     margin: 0 auto;
 }
@@ -152,6 +142,9 @@ p {
     padding: 2vh 2vh 2vh 0vh;
 }
 
-.mdc-dialog .mdc-dialog__surface {
-    background-color: $background !important;
+.mdc-dialog .mdc-dialog__surface { background-color: $background !important; }
+
+.center-text {
+    text-align: center;
+    display: block;
 }
