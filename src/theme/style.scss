@@ -13,7 +13,7 @@ $light_yellow: #fbe093;
 * {
     padding: 0;
     margin: 0;
-      -webkit-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
@@ -21,7 +21,10 @@ $light_yellow: #fbe093;
 // Disable horizontal scroll
 html, body {
     max-width: 100%;
-    overflow-x: hidden;
+    margin: 0; 
+    height: 100%; 
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
 }
 
 h1, h2 {
@@ -48,17 +51,27 @@ h4, h5, h6 {
     padding: 20px;
 }
 
-a, a:visited, button, p, span  {
-  color: $foreground_gray;
-  font-family: 'Josefin Sans', sans-serif;
-  line-height: 140%;
+a, a:visited, button, p, span, ul, li  {
+    color: $foreground_gray;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 140%;
+}
+
+ul {
+    padding-left: 50px;
 }
 
 a {
-  color: $background;
+    line-height: 350%;
+    padding: 20px;
+    color: $dark_teal;
 }
 a:visited {
-  color: $light-yellow;
+    color: $dark-yellow;
+}
+
+button {
+    cursor: pointer;
 }
 
 .tab-content {
@@ -67,6 +80,10 @@ a:visited {
     margin: 0 auto;
     background: $background;
     justify-content: center;
+    height: 80vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    flex-grow: 1;
 }
 
 .tab-inner {
@@ -85,8 +102,6 @@ a:visited {
 .card {
     display: block;
     background-color: #faf9f6;
-    // border-radius: 5px;
-    // box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);
     justify-content: center;
     align-items: center;
     h3 { text-align: center; }

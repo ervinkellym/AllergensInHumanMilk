@@ -41,44 +41,39 @@
 	$: peakData = [
 		{
 			value: 6, name: "Cow's Milk",
-			title: { offsetCenter: ['0%', '-30%'] },
+			title: { show: false },
 			detail: { valueAnimation: true, offsetCenter: ['0%', '-20%'] },
 			itemStyle: { color: dark_teal, opacity: milkChecked },
 		},
 		{
 			value: 6, name: 'Egg',
-			title: { offsetCenter: ['0%', '0%'] },
+			title: { show: false },
 			detail: { valueAnimation: true, offsetCenter: ['0%', '10%'] },
 			itemStyle: { color: light_yellow, opacity: eggChecked },
 		},
 		{
 			value: 4, name: 'Wheat',
-			title: { offsetCenter: ['0%', '30%'] },
+			title: {  show: false  },
 			detail: { valueAnimation: true, offsetCenter: ['0%', '40%'] },
 			itemStyle: { color: med_teal, opacity: wheatChecked },
 		},
 		{
 			value: 2, name: 'Peanut',
-			title: { offsetCenter: ['0%', '30%'] },
+			title: {  show: false  },
 			detail: { valueAnimation: true, offsetCenter: ['0%', '40%'] },
 			itemStyle: { color: dark_yellow, opacity: peanutChecked },
-		}							
+		},
+		{
+			name: "Hours",
+			title: { offsetCenter: ['0%', '0%'] }
+		},							
 	];
 
 	$: peakOptions = { 
 		tooltip: { formatter: function(value) { return value.name + ': ' + value.value + ' hours'; } },
-		// legend: {
-		// 	bottom: 10,
-		// 	left: 'center',
-		// 	data: [ 
-		// 		{ name: 'Cow\'s Milk' },
-		// 		{ name: 'Egg' },
-		// 		{ name: 'Wheat' },
-		// 		{ name: 'Peanut' },
-		// 	]
-		// },
 		series: [{
 			type: 'gauge',
+			radius: '90%',
 			min: 0, max: 24, splitNumber: 8,
 			startAngle: 90, endAngle: -270,
 			pointer: { show: false },
@@ -88,16 +83,16 @@
 				roundCap: true,
 				itemStyle: { borderWidth: 1, borderColor: '#2b2b2b' }
 			},
-			axisLine: { lineStyle: { width: 40 } },
+			axisLine: { lineStyle: { width: 80 } },
 			splitLine: { show: true, distance: 0, length: 10 },
 			axisTick: { show: true, distance: 0, splitNumber: 3 },
 			axisLabel: { 
 				show: true, 
-				distance: 50, 
+				distance: 85, 
 				formatter: function(value) { return value == 24 ? '' : value; } 
 			},
 			data: peakData,
-			title: { show: false },
+			title: { show: true },
 			detail: { show: false },
 		}]
 	};
@@ -105,35 +100,39 @@
 	$: untraceableData = [
 		{
 			value: 24, name: "Cow's Milk",
-			title: { offsetCenter: ['0%', '-30%'] },
+			title: { show: false },
 			detail: { valueAnimation: true, offsetCenter: ['0%', '-20%'] },
-			itemStyle: { color: dark_teal, opacity: 0 },
+			itemStyle: { color: dark_teal, opacity: milkChecked },
 		},
 		{
 			value: 24, name: 'Egg',
-			title: { offsetCenter: ['0%', '0%'] },
+			title: { show: false },
 			detail: { valueAnimation: true, offsetCenter: ['0%', '10%'] },
 			itemStyle: { color: light_yellow, opacity: eggChecked },
 		},
 		{
 			value: 72, name: 'Wheat',
-			title: { offsetCenter: ['0%', '30%'] },
+			title: { show: false },
 			detail: { valueAnimation: true, offsetCenter: ['0%', '40%'] },
-			itemStyle: { color: med_teal, opacity: 0 },
+			itemStyle: { color: med_teal, opacity: wheatChecked },
 		},
 		{
 			value: 8, name: 'Peanut',
-			title: { offsetCenter: ['0%', '30%'] },
+			title: { show: false },
 			detail: { valueAnimation: true, offsetCenter: ['0%', '40%'] },
 			itemStyle: { color: dark_yellow, opacity: peanutChecked },
-		}							
+		},
+		{
+			name: "Hours",
+			title: { offsetCenter: ['0%', '0%'] }
+		},							
 	];
 
 	$: untraceableOptions = {
 		tooltip: { formatter: function(value) { return value.name + ': ' + value.value + ' hours'; } }, 
-		legend: { show: true, type: 'plain' },
 		series: [{
 			type: 'gauge',
+			radius: '90%',
 			min: 0, max: 24, splitNumber: 8,
 			startAngle: 90, endAngle: -270,
 			pointer: { show: false },
@@ -143,18 +142,18 @@
 				roundCap: true,
 				itemStyle: { borderWidth: 1, borderColor: '#2b2b2b' }
 			},
-			axisLine: { lineStyle: { width: 40 } },
+			axisLine: { lineStyle: { width: 80 } },
 			splitLine: { show: true, distance: 0, length: 10 },
 			axisTick: { show: true, distance: 0, splitNumber: 3 },
 			axisLabel: { 
 				show: true, 
-				distance: 50, 
+				distance: 85, 
 				formatter: function(value) { return value == 24 ? '' : value; } 
 			},
 			data: untraceableData,
-			title: { show: false },
+			title: { show: true },
 			detail: { show: false },
-		}]
+		}],
 	};
 
 </script>

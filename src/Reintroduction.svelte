@@ -16,11 +16,15 @@
 		legend: {},
 		tooltip: {},
 		xAxis: {
+			name: 'Age',
+			nameLocation: 'center',
+			nameTextStyle: { fontSize: 14, padding: [20, 0, 0 , 0] },
 			type: 'category',
-			data: ['Before Age 1', '1 Year Old', '2 Years Old', '3 Years Old']
+			data: ['Under 1', '1', '2', '3']
 		},
 		yAxis: {
-			type: 'value'
+			show: false
+			// type: 'value'
 		},
 		series: [
 			{
@@ -39,7 +43,7 @@
 				data: [0, 56, 77, 82],
 				type: 'bar',
 				stack: 'a',
-				name: 'Allergy Outgrown',
+				name: 'Outgrew Allergy',
 				label: {
 					show: true,
 					position: 'inside',
@@ -55,11 +59,15 @@
 		legend: { itemStyle: { borderColor: fg_gray }}, // FIXME
 		tooltip: {},
 		xAxis: {
+			name: 'Age',
+			nameLocation: 'center',
+			nameTextStyle: { fontSize: 14, padding: [20, 0, 0 , 0] },
 			type: 'category',
-			data: ['1 Year Old', '2 Years Old', '3 Years Old']
+			data: ['1', '2', '3']
 		},
 		yAxis: {
-			type: 'value'
+			// type: 'value',
+			show: false
 		},
 		series: [
 			{
@@ -72,7 +80,7 @@
 					position: 'inside',
 					formatter: (value) => { return value.value == 0 ? '' : value.value + '%'; }
 				},
-				itemStyle: { color: bg_white, borderColor: fg_gray }
+				itemStyle: { color: fg_gray, borderColor: bg_white }
 			},
 			{
 				data: [75, 53, 27],
@@ -107,10 +115,16 @@
 		tooltip: {},
 		xAxis: {
 			type: 'category',
-			data: ["Cow's Milk", 'Egg', 'Wheat']
+			data: ["Cow's Milk", 'Egg', 'Wheat'],
+			name: 'Food Allergen',
+			nameLocation: 'center',
+			nameTextStyle: { fontSize: 14, padding: [20, 0, 0 , 0] },
 		},
 		yAxis: {
-			type: 'value'
+			type: 'value',
+			name: 'Age',
+			nameLocation: 'center',
+			nameTextStyle: { fontSize: 14, padding: [0, 0, 15 , 0] },
 		},
 		series: [
 			{
@@ -119,6 +133,7 @@
 				label: {
 					show: true,
 					position: 'inside',
+					formatter: (value) => { return value.value + " years"; }
 				},
 				itemStyle: { color: dark_teal }
 			}
@@ -129,21 +144,30 @@
 </script>
 
 <div class="tab-content">
-	<div class='tab-inner'>
+	<div class='tab-inner' style="display:inline !important; align-content:center;">
 		<div>
 			<h2>Outgrowing & Reintroducing Infant Food Allergies</h2>
-			<p>[Content about children outgrowing infant food allergies]</p>
+			<p>Many children diagnosed with food sensitivities and allergies early in life will not be allergic all their lives. The timeline for outgrowing a food sensitivity or allergy depends heavily on the offending food, the severity of sensitivity/allergy, and the type of sensitivity/allergy. Below are results from three studies that followed food-allergic and sensitive children over several years to determine if and when they outgrew their sensitivities/allergies.</p>
 		</div>
 		<div class="card-container">
 			<div class="card">
-				<h3>Cow's Milk Allergy Outgrowth for Children Ages 0-3</h3>
+				<h3 id="Cow's Milk Allergy Outgrowth Title">Cow's Milk Allergy Outgrowth for Children Ages 0-3</h3>
 				<div class="chart">
-					<Chart options = { milkOptions } />
+					<Chart 
+						options = { milkOptions } 
+						aria-describedby="Cow's Milk Allergy Outgrowth Chart Description" 
+						aria-labelledby="Cow's Milk Allergy Outgrowth Title"
+					/>
 				</div>
 			</div>
-			<div class="card">
-				<p>(39 Participants)</p>
-				<p>[How to read this chart, information about the study it is derived from]</p>
+			<div class="card" id="Cow's Milk Allergy Outgrowth Chart Description">
+				<p>This 1990 study published in the European Journal of Allergy and Clinical Immunology followed 39 children diagnosed with Cow's Milk Allergy before they were 1 year old. At ages one, two, and three, the children were re-tested for Cow's Milk Allergy using skin-prick and blood testing.</p>
+				<ul>
+					<li>At age one, 22 (56%) of the children had outgrown their allergy.</li>
+					<li>At age two, 30 (77%) of the children had outgrown their allergy.</li>
+					<li>At age three, 32 (82%) of the children had outgrown their allergy.</li>
+				</ul>
+				<a href='https://pubmed.ncbi.nlm.nih.gov/2288394/' target='_blank'>[Source]</a>
 			</div>
 		</div>
 		<div class="card-container">

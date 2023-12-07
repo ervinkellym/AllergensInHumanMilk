@@ -104,6 +104,7 @@
 			<h3>Where is the data from?</h3>
 			<p>[Content]</p>
 		</div>
+		<a href="https://github.com/ervinkellym/AllergensInHumanMilk">About This Project</a>
 	</div>
 </div>
 

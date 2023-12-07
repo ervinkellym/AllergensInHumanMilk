@@ -10,6 +10,9 @@
 	import Reintroduction from "./Reintroduction.svelte";
   export const TABS = ['Home', 'Signs & Symptoms', 'Protein Persistence', 'Reintroduction'];
   let active = 'Home';
+
+  import TealMountains from '/src/assets/TealMountains.jpeg';
+
 </script>
 
 <main>
@@ -32,33 +35,11 @@
           <Home/>
       {/if}
   </div>
-  <div id="footer">
-    <a href="https://github.com/ervinkellym/AllergensInHumanMilk">about</a>
-  </div>
 </main>
 
 <style>
   .tab-div {
-    max-width: 1100px;
-    margin: 0 auto;
-  }
-
-  .mat-tab-label-active {
-    background-color: #000;
-    color: #fff;
-    opacity: 1;
-}
-
-  #footer {
-    position:fixed;
-    text-align: center;
-    left:0px;
-    bottom:0px;
-    height:30px;
-    width:100%;
-    background:#114d5f;
-    /* a {
-      padding-topp: 5px;
-    } */
+      max-width: 1100px;
+      margin: 0 auto;
   }
 </style>
