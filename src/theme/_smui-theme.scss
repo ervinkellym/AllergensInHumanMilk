@@ -34,18 +34,16 @@ body {
 }
 
 h1, h2 {
-  font-family: 'Yeseva One', serif;
+  font-family: 'Yeseva One', serif !important;
   text-align: center;
   padding-top: 5px;
 }
 
 h1 { color: $light-yellow; }
 
-h2 { color: $dark-yellow; }
+h2 { color: $dark-yellow !important; }
 
-h3 {
-    padding-top: 15px;
-}
+h3 { padding-top: 15px; }
 
 h3, h4, h5, h6 {
     color: $dark-teal;
@@ -58,21 +56,14 @@ p, span  {
   font-family: 'Josefin Sans', sans-serif;
 }
 
-a {
-  color: $background-white;
-}
-
-a:visited {
-  color: $light-yellow;
-}
-
 .mdc-tab--active {
   background-color: $background-white !important;
-  .mdc-tab__text-label {
-    color: $dark_teal !important;
-  }
+  .mdc-tab__text-label { color: $dark_teal !important; }
 }
 
-.mdc-tab__text-label {
-  color: $background-white !important;
+.mdc-tab__text-label { color: $background-white !important; }
+
+.mdc-dialog__title { 
+  font-family: 'Josefin Sans', sans-serif !important;
+  color: $dark-teal !important; 
 }

@@ -57,7 +57,7 @@ a, a:visited, button, p, span, ul, li  {
     line-height: 150%;
 }
 
-a, p, { padding: 20px; }
+a, p { padding: 20px; }
 
 a { color: $dark_teal; }
 a:visited { color: $dark-yellow; }
@@ -91,6 +91,10 @@ button { cursor: pointer; }
 
 .wide-content { max-width: 800px; }
 
+.medium-content { max-width: 600px; }
+
+.wider-content { max-width: 900px; }
+
 .card-container {
     display: flex;
     align-items: center;
@@ -100,11 +104,12 @@ button { cursor: pointer; }
 }
 
 .card {
-    display: block;
+    display: inline;
     background-color: #faf9f6;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     h3 { text-align: center; }
+    min-width: 0;
 }
 
 .card:nth-of-type(1){ flex: 1 300px; }
@@ -113,7 +118,7 @@ button { cursor: pointer; }
 
 .chart {
     justify-content: center;
-    height: 45vh;
+    height: 50vh;
     width: 100%;
     max-width: 500px;
 }
@@ -139,7 +144,7 @@ button { cursor: pointer; }
         max-width: 85vw;
         max-height: 50vh;
     }
-    padding: 2vh 2vh 2vh 0vh;
+    padding: 2vh;
 }
 
 .mdc-dialog .mdc-dialog__surface { background-color: $background !important; }

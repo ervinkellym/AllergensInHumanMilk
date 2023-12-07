@@ -161,7 +161,7 @@
 <main>
 	<div class="tab-content">
 		<div class='tab-inner'>
-			<h2>How Long Do Allergenic Proteins Persist In My Milk?</h2>
+			<h2>How Long Do Food Proteins Stay In My Milk?</h2>
 			<p>[how to use these gauges]</p>
 			<div class='card-container'>
 				<FormField>
@@ -216,13 +216,13 @@
 			<br>
 			<div class="card-container">
 				<div class="card">
-					<h3>Peak Amount</h3>
+					<h3>Time to Peak Allergen Concentration</h3>
 					<div class="chart" sr-only='TODO'>
 						<Chart options = { peakOptions } bind:this = { chart1 }/>
 					</div>
 				</div>
 				<div class="card">
-					<h3>Untraceable Amount</h3>
+					<h3>Time to Undetectable Allergen Concentration</h3>
 					<div class="chart" sr-only='TODO'>
 						<Chart options = { untraceableOptions } bind:this = { chart2 }/>
 					</div>

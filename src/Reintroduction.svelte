@@ -63,7 +63,7 @@
 			nameLocation: 'center',
 			nameTextStyle: { fontSize: 14, padding: [20, 0, 0 , 0] },
 			type: 'category',
-			data: ['1', '2', '3']
+			data: ['0', '1', '2', '3']
 		},
 		yAxis: {
 			// type: 'value',
@@ -71,7 +71,7 @@
 		},
 		series: [
 			{
-				data: [0, 16, 43],
+				data: [0, 0, 16, 43],
 				type: 'bar',
 				stack: 'a',
 				name: 'Didn\'t Test',
@@ -83,7 +83,7 @@
 				itemStyle: { color: fg_gray, borderColor: bg_white }
 			},
 			{
-				data: [75, 53, 27],
+				data: [100, 75, 53, 27],
 				type: 'bar',
 				stack: 'a',
 				name: 'Allergic',
@@ -95,7 +95,7 @@
 				itemStyle: { color: dark_yellow, borderColor: bg_white }
 			},
 			{
-				data: [25, 31, 30],
+				data: [0, 25, 31, 30],
 				type: 'bar',
 				stack: 'a',
 				name: 'Outgrew Allergies',
@@ -153,7 +153,7 @@
 		<br>
 		<div class="card-container">
 			<div class="card">
-				<h3 id="Cow's Milk Allergy Outgrowth Title">Cow's Milk Allergy Outgrowth for Children Ages 0-3</h3>
+				<h3 id="Cow's Milk Allergy Outgrowth Title">Cow's Milk Allergy Outgrowth for Allergic Children Ages 0-3</h3>
 				<div class="chart">
 					<Chart 
 						options = { milkOptions } 
@@ -177,7 +177,7 @@
 		<br>
 		<div class="card-container">
 			<div class="card">
-				<h3>Allergy Outgrowth for Children Ages 3-18 Experiencing Atopic Dermatitis Over 3 years</h3>
+				<h3>Allergy Outgrowth for Children Ages 3-18 with Food Allergies Experiencing Atopic Dermatitis Over 3 years</h3>
 				<div class="chart">
 					<Chart options = { atopicOptions } />
 				</div>
