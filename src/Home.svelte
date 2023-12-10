@@ -81,11 +81,11 @@
 				},
 				data: [
 					{ 
-						value: 51, name: 'Don\'t Avoid Allergen', 
+						value: 50, name: 'Don\'t Avoid Allergen', 
 						itemStyle: { color: dark_teal, borderColor: fg_white } 
 					},
 					{ 
-						value: 18, name: 'Avoid Allergen', 
+						value: 19, name: 'Avoid Allergen', 
 						itemStyle: { color: dark_yellow, borderColor: fg_white } 
 					},
 					{ 
@@ -117,7 +117,7 @@
 			<div class='text-with-img medium-content'>
 				<h3>What is this site?</h3>
 				<p>A resource for parents of infants consuming human milk (breastfeeding, chestfeeding, and drinking pumped milk) who may have infant food allergies.</p>
-				<p>This website is a resource rather than a diagnostic tool and does not constitute medical advice. Always consult with your physician before taking action that may affect your or your child's health.</p>
+				<p>This site is not a diagnostic tool and does not constitute medical advice. Always consult with a physician before making changes that may affect your or your child's health.</p>
 			</div>
 			<div class='img-with-text'>
 				<img src={ YellowBlueChestfeeding } alt=''>
@@ -128,15 +128,15 @@
 				<h3>How do I use this site?</h3>
 				<h4 style="color: {dark_yellow};">Useful if you are currently breastfeeding, chestfeeding, or feeding pumped milk:</h4>
 				<h4>1) Signs & Symptoms</h4>
-				<p>What infant food reactivity looks like and the different types of allergies/sensitivities that commonly affect chestfed infants.</p>
+				<p>Symptoms of infant food allergies and other possible causes of those symptoms.</p>
 				<h4>2) Protein Persistence</h4>
-				<p>Interactive visuals so you can determine how long allergenic or triggering food proteins will remain in your milk after consumption. These can be filtered by food so you can customize the visuals to whichever foods you are concerned about.</p>
+				<p>Interactive visuals showing how long allergenic food proteins may stay in your milk after consumption. These can be filtered by food so that you can customize the visuals to your child's allergies.</p>
 				<h4 style="color: {dark_yellow};">Useful for all parents of children with food allergies:</h4>
 				<h4>3) Reintroduction</h4>
-				<p>Information about how many children with allergies to different foods as infants will outgrow them as well as reintroduction ladders for major food allergens. This information can help you throughout your experience with infant and childhood food allergies.</p>
+				<p>How many children with infant & childhood food allergies will outgrow them and reintroduction ladders for major food allergens.</p>
 
 				<h3>Why is this information important?</h3>
-				<p>This area is underreasearched and the research that is available is difficult for most people to access and understand. Many physicians also lack education in this specific area so recommendations can vary widely. Some recommendations based on outdated knowledge can even be harmful.</p>
+				<p>This subject is underresearched, and the available research is difficult for most people to access and understand. Many physicians lack education in this area, so recommendations can vary, and some advice based on outdated knowledge can even be harmful.</p>
 			</div>
 		</div>
 		<div>
@@ -148,23 +148,23 @@
 					</div>
 				</div>
 				<div class="card">
-					<p>124 lactating parents were asked what their healthcare provider advised after their infant was diagnosed with a food allergy:</p>
+					<p>Researchers asked 124 lactating parents what their healthcare provider advised after their infant was diagnosed with a food allergy:</p>
 					<ul>
 						<li>63 (50%) were told to continue consuming the allergen.</li>
 						<li>23 (19%) were told to avoid the allergen.</li>
-						<li>38 (31%) were given no dietary guidance.</li>
+						<li>38 (31%) were given no guidance.</li>
 					</ul>
 					<div class='center-text'>
 						<a href='https://www.annallergy.org/article/S1081-1206(21)00133-2/fulltext' target='_blank'>[Annals of Allergy, Asthma, and Immunology, 2021]</a>
 					</div>
-					<p>Feeding your child your milk while consuming a food they are allergic to could be harmful. Before making any dietary changes, consult your & your child's physicians.</p>
+					<p>Feeding your child your milk while consuming a food they are allergic to could be harmful. Before making any dietary changes, consult with a physician.</p>
 				</div>
 			</div>
 		</div>
 		<div class='wide-content-wrapper'>
 			<div class='wider-content'>
 				<h3>Where is the data from?</h3>
-				<p>The data behind this website were gathered from verious research papers and journal articles. Sources are linked with the data throughout this website.</p>
+				<p>The data in this website were gathered from various research papers and journal articles. Sources are linked throughout this website.</p>
 			</div>
 		</div>
 		<br>
