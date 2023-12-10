@@ -217,39 +217,42 @@
 			</div>
 		</div>
 		<br>
-		<div>
-			<h3>Food Reintroduction Ladders</h3>
-			<p>Reintroduction ladders help determine if a child will tolerate an allergen to which they have had a non-IgE mediated (delayed) allergic reaction. You must not start a reintroduction ladder with your child unless their physician explicitly advises it. Reintroduction ladders are unsafe for children with IgE-mediated (immediate) allergic reactions.</p>
-			<p>Reintroduction ladders use a stepped approach to introducing an allergen. On each rung of the ladder, the food is broken down to a different degree through cooking. The child consumes an increasing amount of the food while on that ladder rung. They can move on to the next rung if they do not react.</p>
-			<p>Here are some sample reintroduction ladders. You should use the ladder that your child's physician prescribes.</p>
-			<div class='card-container wide-content'>
-				<div class='card'>
-					<h4 class='center-text'>North American Ladders</h4>
-					<div class='center-text'>
-						<a href='https://www.bcchr.ca/foodallergy/resources/canadian-food-ladders' target='_blank'>Canadian Milk & Egg Ladders</a>
-					</div>
-					<div class='center-text'>
-						<a href='https://www.freetofeed.com/reintroduction-ladders' target='_blank'>Free to Feed Milk, Egg, Wheat & Soy Ladders</a>
-					</div>
-					<div class='center-text'>
-						<a href='https://gpifn.files.wordpress.com/2019/10/imap_final_ladder-may_2017_original.pdf' target='_blank'>iMAP Milk Ladder</a>
-					</div>
+		<div class='wide-content-wrapper'>
+			<div class='wide-content'>
+				<h3>Food Reintroduction Ladders</h3>
+				<p>Reintroduction ladders help determine if a child will tolerate an allergen to which they have had a non-IgE mediated (delayed) allergic reaction. You must not start a reintroduction ladder with your child unless their physician explicitly advises it. Reintroduction ladders are unsafe for children with IgE-mediated (immediate) allergic reactions.</p>
+				<p>Reintroduction ladders use a stepped approach to introducing an allergen. On each rung of the ladder, the food is broken down to a different degree through cooking. The child consumes an increasing amount of the food while on that ladder rung. They can move on to the next rung if they do not react.</p>
+				<p>Here are some sample reintroduction ladders. You should use the ladder that your child's physician prescribes.</p>
+			</div>
+		</div>
+		<div class='card-container wide-content'>
+			<div class='card'>
+				<h4 class='center-text'>North American Ladders</h4>
+				<div class='center-text'>
+					<a href='https://www.bcchr.ca/foodallergy/resources/canadian-food-ladders' target='_blank'>Canadian Milk & Egg Ladders</a>
 				</div>
-				<div class='card'>
-					<h4 class='center-text'>UK Ladders</h4>
-					<div class='center-text'>
-						<a href='https://allergynorthwest.nhs.uk/home-patient/managing-allergies/patient-leaflets/cows-milk-reintroduction-milk-ladder-2/' target='_blank'>UK Milk Ladder</a>
-					</div>
-					<div class='center-text'>
-						<a href='https://www.imperial.nhs.uk/-/media/website/patient-information-leaflets/childrens-services/childrens-allergy/soya-ladder.pdf?rev=58856e1a9a0d4f5f81208b61e5d09e4f&sc_lang=en' target='_blank'>UK Soya Ladder</a>
-					</div>
-					<div class='center-text'>
-						<a href='https://www.imperial.nhs.uk/-/media/website/patient-information-leaflets/childrens-services/childrens-allergy/wheat-ladder.pdf?rev=9d05effe365a46579f68b0fbc37d8f03&sc_lang=en' target='_blank'>UK Wheat Ladder</a>
-					</div>
+				<div class='center-text'>
+					<a href='https://www.freetofeed.com/reintroduction-ladders' target='_blank'>Free to Feed Milk, Egg, Wheat & Soy Ladders</a>
+				</div>
+				<div class='center-text'>
+					<a href='https://gpifn.files.wordpress.com/2019/10/imap_final_ladder-may_2017_original.pdf' target='_blank'>iMAP Milk Ladder</a>
 				</div>
 			</div>
-			<br>
+			<div class='card'>
+				<h4 class='center-text'>UK Ladders</h4>
+				<div class='center-text'>
+					<a href='https://allergynorthwest.nhs.uk/home-patient/managing-allergies/patient-leaflets/cows-milk-reintroduction-milk-ladder-2/' target='_blank'>UK Milk Ladder</a>
+				</div>
+				<div class='center-text'>
+					<a href='https://www.imperial.nhs.uk/-/media/website/patient-information-leaflets/childrens-services/childrens-allergy/soya-ladder.pdf?rev=58856e1a9a0d4f5f81208b61e5d09e4f&sc_lang=en' target='_blank'>UK Soya Ladder</a>
+				</div>
+				<div class='center-text'>
+					<a href='https://www.imperial.nhs.uk/-/media/website/patient-information-leaflets/childrens-services/childrens-allergy/wheat-ladder.pdf?rev=9d05effe365a46579f68b0fbc37d8f03&sc_lang=en' target='_blank'>UK Wheat Ladder</a>
+				</div>
+			</div>
 		</div>
+		<br>
+		<br>
 		<br>
 	</div>
 </div>

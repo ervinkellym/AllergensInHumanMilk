@@ -16,7 +16,7 @@
 </script>
 
 <main>
-  <h1>[Title]</h1>
+  <h1>Allergens in Human Milk</h1>
   <div class='tab-div'>
       <TabBar tabs={TABS} let:tab bind:active>
           <Tab {tab}>

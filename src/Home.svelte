@@ -168,9 +168,8 @@
 			</div>
 		</div>
 		<br>
-		<!-- <div class='center-text'>
-			<a href="https://github.com/ervinkellym/AllergensInHumanMilk">About This Project</a>
-		</div> -->
+		<br>
+		<br>
 	</div>
 </div>
 

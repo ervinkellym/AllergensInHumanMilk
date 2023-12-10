@@ -31,6 +31,9 @@
 				<img src={ YellowChestfeeding } alt=''>
 			</div>
 		</div>
+		<br>
+		<br>
+		<br>
 	</div>
 </div>
 

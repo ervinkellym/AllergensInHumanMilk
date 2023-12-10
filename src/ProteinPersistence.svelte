@@ -282,6 +282,8 @@
 				<p>How much, if any, allergen transfers to the milk depends on the person, the food, its preparation, and the amount consumed. Use this information as a starting point rather than a definitive indicator of how your body and your milk will affect your baby. Detailed information about each allergen, including data sources, is available by clicking or tapping the buttons next to the checkboxes.</p>
 			</div>
 			<br>
+			<br>
+			<br>
 		</div>
 	</div>
 </main>
