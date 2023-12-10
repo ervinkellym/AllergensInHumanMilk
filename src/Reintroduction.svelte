@@ -147,7 +147,7 @@
 		<div class='wide-content-wrapper'>
 			<div class='wide-content'>
 				<h2>Outgrowing & Reintroducing Infant Food Allergies</h2>
-				<p>Many children diagnosed with food sensitivities and allergies early in life will not be allergic all their lives. The timeline for outgrowing a food sensitivity or allergy depends heavily on the offending food, the severity of sensitivity/allergy, and the type of sensitivity/allergy. Below are results from three studies that followed food-allergic and sensitive children over several years to determine if and when they outgrew their sensitivities/allergies.</p>
+				<p>Many children with food allergies will not be allergic all their lives. How long it takes to outgrow an allergy depends on the food and the severity of the allergy. Below are results from three studies that followed allergic children to determine if and when they outgrew their allergies.</p>
 			</div>
 		</div>
 		<br>
@@ -163,14 +163,14 @@
 				</div>
 			</div>
 			<div class="card" id="Cow's Milk Allergy Outgrowth Chart Description">
-				<p>A 1990 study published in The European Journal of Allergy and Clinical Immunology followed 39 children diagnosed with Cow's Milk Allergy before they were 1 year old. At ages one, two, and three, the children were re-tested for Cow's Milk Allergy using skin-prick and blood testing.</p>
+				<p>39 children diagnosed with Cow's Milk Allergy before they were one year old were re-tested at ages one, two, and three using skin-prick and blood testing.</p>
 				<ul>
-					<li>At age one, 22 (56%) of the children had outgrown their allergy.</li>
-					<li>At age two, 30 (77%) of the children had outgrown their allergy.</li>
-					<li>At age three, 32 (82%) of the children had outgrown their allergy.</li>
+					<li>At one, 22 (56%) had outgrown their allergy.</li>
+					<li>At two, 30 (77%) had outgrown their allergy.</li>
+					<li>At three, 32 (82%) had outgrown their allergy.</li>
 				</ul>
 				<div class='center-text'>
-					<a href='https://pubmed.ncbi.nlm.nih.gov/2288394/' target='_blank'>[Source]</a>
+					<a href='https://pubmed.ncbi.nlm.nih.gov/2288394/' target='_blank'>[European Journal of Allergy and Clinical Immunology, 1990]</a>
 				</div>
 			</div>
 		</div>
@@ -183,15 +183,15 @@
 				</div>
 			</div>
 			<div class="card">
-				<p>A 1989 study published in The Journal of Pediatrics followed 75 children ages 3-18 with atopic dermatitis and at least one food allergy for three years. The children avoided their allergen(s) and, at yearly intervals, were re-tested for their food allergy with food challenges (consuming an allergen in a clinical setting and monitoring for a reaction).</p>
+				<p>75 children ages 3-18 with atopic dermatitis and at least one food allergy avoided their allergen(s) for three years. Each year, they 'challenged' their food allergy by eating the allergen(s) in a clinical setting and watching for a reaction.</p>
 				<ul>
-					<li>After one year, 19 (26%) of the children outgrew all allergies.</li>
-					<li>After two years, an additional 4 (5%) of the children outgrew all allergies.</li>
+					<li>After one year, 19 (26%) outgrew all allergies.</li>
+					<li>After two years, 4 (5%) outgrew all allergies.</li>
 					<li>After three years, no more children (0%) outgrew allergies.</li>
 				</ul>
-				<p>In total, 23 (31%) of the children outgrew all allergies. Some children did not participate in subsequent testing after the first year.</p>
+				<p>23 (31%) of the children outgrew all allergies. Some children did not repeat testing after the first year.</p>
 				<div class='center-text'>
-					<a href='https://pubmed.ncbi.nlm.nih.gov/2738792/' target='_blank'>[Source]</a>
+					<a href='https://pubmed.ncbi.nlm.nih.gov/2738792/' target='_blank'>[Journal of Pediatrics, 1989]</a>
 					<a href='https://sci-hub.se/10.1016/s0022-3476(89)80323-3' target='_blank'>[Full Text]</a>
 				</div>
 			</div>
@@ -205,15 +205,52 @@
 				</div>
 			</div>
 			<div class="card">
-				<p>[How to read this chart, information about the study it is derived from]</p>
+				<p>115 babies with atopic dermatitis and at least one allergy to cow's milk, egg, or wheat were monitored for eight years. 66 (57%) of children outgrew their allergies by age eight. The median ages for allergen tolerance were:</p>
+				<ul>
+					<li>Cow's Milk - 7 years, 11 months</li>
+					<li>Egg - 6 years, 6 months</li>
+					<li>Wheat - 7 years, 2 months</li>
+				</ul>
+				<div class='center-text'>
+					<a href='https://pubmed.ncbi.nlm.nih.gov/15636401/' target='_blank'>[European Review for Medical and Pharmacological Sciences, 2004]</a>
+				</div>
 			</div>
 		</div>
 		<br>
 		<div>
 			<h3>Food Reintroduction Ladders</h3>
-			<p>[Explanation of reintroduction ladders]</p>
-			<p>[Links to ladders (ideally reformatted for consistency and displayed in this site)]</p>
+			<p>Reintroduction ladders help determine if a child will tolerate an allergen to which they have had a non-IgE mediated (delayed) allergic reaction. You must not start a reintroduction ladder with your child unless their physician explicitly advises it. Reintroduction ladders are unsafe for children with IgE-mediated (immediate) allergic reactions.</p>
+			<p>Reintroduction ladders use a stepped approach to introducing an allergen. On each rung of the ladder, the food is broken down to a different degree through cooking. The child consumes an increasing amount of the food while on that ladder rung. They can move on to the next rung if they do not react.</p>
+			<p>Here are some sample reintroduction ladders. You should use the ladder that your child's physician prescribes.</p>
+			<div class='card-container wide-content'>
+				<div class='card'>
+					<h4 class='center-text'>North American Ladders</h4>
+					<div class='center-text'>
+						<a href='https://www.bcchr.ca/foodallergy/resources/canadian-food-ladders' target='_blank'>Canadian Milk & Egg Ladders</a>
+					</div>
+					<div class='center-text'>
+						<a href='https://www.freetofeed.com/reintroduction-ladders' target='_blank'>Free to Feed Milk, Egg, Wheat & Soy Ladders</a>
+					</div>
+					<div class='center-text'>
+						<a href='https://gpifn.files.wordpress.com/2019/10/imap_final_ladder-may_2017_original.pdf' target='_blank'>iMAP Milk Ladder</a>
+					</div>
+				</div>
+				<div class='card'>
+					<h4 class='center-text'>UK Ladders</h4>
+					<div class='center-text'>
+						<a href='https://allergynorthwest.nhs.uk/home-patient/managing-allergies/patient-leaflets/cows-milk-reintroduction-milk-ladder-2/' target='_blank'>UK Milk Ladder</a>
+					</div>
+					<div class='center-text'>
+						<a href='https://www.imperial.nhs.uk/-/media/website/patient-information-leaflets/childrens-services/childrens-allergy/soya-ladder.pdf?rev=58856e1a9a0d4f5f81208b61e5d09e4f&sc_lang=en' target='_blank'>UK Soya Ladder</a>
+					</div>
+					<div class='center-text'>
+						<a href='https://www.imperial.nhs.uk/-/media/website/patient-information-leaflets/childrens-services/childrens-allergy/wheat-ladder.pdf?rev=9d05effe365a46579f68b0fbc37d8f03&sc_lang=en' target='_blank'>UK Wheat Ladder</a>
+					</div>
+				</div>
+			</div>
+			<br>
 		</div>
+		<br>
 	</div>
 </div>
 

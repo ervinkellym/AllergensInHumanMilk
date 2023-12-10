@@ -8,7 +8,7 @@
 	import SignsSymptoms from "./SignsSymptoms.svelte";
 	import ProteinPersistence from "./ProteinPersistence.svelte";
 	import Reintroduction from "./Reintroduction.svelte";
-  export const TABS = ['Home', 'Signs & Symptoms', 'Protein Persistence', 'Reintroduction'];
+  export const TABS = ['Home', 'Signs & Symptoms', 'Allergen Timelines', 'Reintroduction'];
   let active = 'Home';
 
   import TealMountains from '/src/assets/TealMountains.jpeg';
@@ -27,7 +27,7 @@
           <Home/>
       {:else if active === 'Signs & Symptoms'}
           <SignsSymptoms/>
-      {:else if active === 'Protein Persistence'}
+      {:else if active === 'Allergen Timelines'}
           <ProteinPersistence/>
       {:else if active === 'Reintroduction'}
           <Reintroduction/>

@@ -7,7 +7,55 @@
 	let light_teal = '#d2f3f7';
 	let dark_yellow = '#9b810b';
 	let light_yellow = '#fbe093';
+	let fg_white = '#faf9f6';
 	let fg_gray = '#2b2b2b';
+
+	const adviceOptions = {
+		grid: { left: '5%', top: 0, right: '5%', bottom: 0 },
+		tooltip: { 
+			trigger: 'item',
+			formatter: (param) => {
+			  switch(param.value) {
+			    case 51: return "Don't Avoid Allergen (51%)";
+			    case 18: return "Avoid Allergen (18%)";
+			    case 31: return "Not Addressed (31%)";
+			    default: return "invalid";
+			  }
+			}
+		},
+		legend: {},
+		xAxis: { show: false },
+		yAxis: { type: 'category', show: false },
+		series: [
+			{
+				name: 'Don\'t Avoid Allergen',
+				type: 'bar',
+				stack: 'a',
+				label: { show: true, formatter(param) { return param.value + '%'; }, },
+				emphasis: { focus: 'series' },
+				data: [51],
+				itemStyle: { color: dark_teal, borderColor: fg_white } 
+			},
+			{
+				name: 'Avoid Allergen',
+				type: 'bar',
+				stack: 'a',
+				label: { show: true, formatter(param) { return param.value + '%'; } },
+				emphasis: { focus: 'series' },
+				data: [18],
+				itemStyle: { color: dark_yellow, borderColor: fg_white } 
+			},
+			{
+				name: 'Not Addressed',
+				type: 'bar',
+				stack: 'a',
+				label: { show: true, formatter(param) { return param.value + '%'; } },
+				emphasis: { focus: 'series' },
+				data: [31],
+				itemStyle: { color: fg_gray, borderColor: fg_white } 
+			},
+		]
+	}
 
 	const options = {
 		tooltip: { 
@@ -23,8 +71,8 @@
 		series: [
 			{
 				type: 'pie',
-				radius: ['40%', '105%'],
-				center: ['50%', '85%'],
+				radius: ['40%', '95%'],
+				center: ['50%', '75%'],
 				startAngle: 180,
 				label: {
 					show: true,
@@ -34,15 +82,15 @@
 				data: [
 					{ 
 						value: 51, name: 'Don\'t Avoid Allergen', 
-						itemStyle: { color: med_teal, borderColor: fg_gray } 
+						itemStyle: { color: dark_teal, borderColor: fg_white } 
 					},
 					{ 
 						value: 18, name: 'Avoid Allergen', 
-						itemStyle: { color: light_yellow, borderColor: fg_gray } 
+						itemStyle: { color: dark_yellow, borderColor: fg_white } 
 					},
 					{ 
 						value: 31, name: 'Not Addressed', 
-						itemStyle: { color: dark_yellow, borderColor: fg_gray } 
+						itemStyle: { color: fg_gray, borderColor: fg_white } 
 					},
 					{
 						value: 100, // make an record to fill the bottom 50%
@@ -65,12 +113,11 @@
 
 <div class="tab-content">
 	<div class='tab-inner'>
-		<h2>[Page Title]</h2>
 		<div class='text-img-container wide-content-wrapper'>
 			<div class='text-with-img medium-content'>
 				<h3>What is this site?</h3>
-				<p> A resource for chestfeeding parents of food reactive infants who may be considering removing common food allergens from their diet.</p>
-				<p>This website is intended as a resource rather than a diagnostic tool and does not constitute medical advice. Always consult with your and your child's medical care teams before taking action that may affect the health of you or your child.</p>
+				<p>A resource for parents of infants consuming human milk (breastfeeding, chestfeeding, and drinking pumped milk) who may have infant food allergies.</p>
+				<p>This website is a resource rather than a diagnostic tool and does not constitute medical advice. Always consult with your physician before taking action that may affect your or your child's health.</p>
 			</div>
 			<div class='img-with-text'>
 				<img src={ YellowBlueChestfeeding } alt=''>
@@ -79,18 +126,17 @@
 		<div class='wide-content-wrapper'>
 			<div class='wider-content'>
 				<h3>How do I use this site?</h3>
-				<p>The different pages here can aid you through your entire infant food reactivity/allergy journey.</p>
-				<h4 style="color: {dark_yellow};">Useful if you are currently chestfeeding:</h4>
+				<h4 style="color: {dark_yellow};">Useful if you are currently breastfeeding, chestfeeding, or feeding pumped milk:</h4>
 				<h4>1) Signs & Symptoms</h4>
 				<p>What infant food reactivity looks like and the different types of allergies/sensitivities that commonly affect chestfed infants.</p>
 				<h4>2) Protein Persistence</h4>
 				<p>Interactive visuals so you can determine how long allergenic or triggering food proteins will remain in your milk after consumption. These can be filtered by food so you can customize the visuals to whichever foods you are concerned about.</p>
-				<h4 style="color: {dark_yellow};">Useful for parents of allergic children at any age:</h4>
+				<h4 style="color: {dark_yellow};">Useful for all parents of children with food allergies:</h4>
 				<h4>3) Reintroduction</h4>
 				<p>Information about how many children with allergies to different foods as infants will outgrow them as well as reintroduction ladders for major food allergens. This information can help you throughout your experience with infant and childhood food allergies.</p>
 
 				<h3>Why is this information important?</h3>
-				<p>[Content]</p>
+				<p>This area is underreasearched and the research that is available is difficult for most people to access and understand. Many physicians also lack education in this specific area so recommendations can vary widely. Some recommendations based on outdated knowledge can even be harmful.</p>
 			</div>
 		</div>
 		<div>
@@ -98,24 +144,33 @@
 				<div class="card">
 					<h3>Physician Recommendations for Chestfeeding Infants with Allergies</h3>
 					<div class="chart">
-						<Chart { options } bind:this={pieChart}/>
+						<Chart options={ options } bind:this={pieChart}/>
 					</div>
 				</div>
 				<div class="card">
-					<p>[How to read this chart, information about the study it is derived from]</p>
+					<p>124 lactating parents were asked what their healthcare provider advised after their infant was diagnosed with a food allergy:</p>
+					<ul>
+						<li>63 (50%) were told to continue consuming the allergen.</li>
+						<li>23 (19%) were told to avoid the allergen.</li>
+						<li>38 (31%) were given no dietary guidance.</li>
+					</ul>
+					<div class='center-text'>
+						<a href='https://www.annallergy.org/article/S1081-1206(21)00133-2/fulltext' target='_blank'>[Annals of Allergy, Asthma, and Immunology, 2021]</a>
+					</div>
+					<p>Feeding your child your milk while consuming a food they are allergic to could be harmful. Before making any dietary changes, consult your & your child's physicians.</p>
 				</div>
 			</div>
 		</div>
 		<div class='wide-content-wrapper'>
 			<div class='wider-content'>
 				<h3>Where is the data from?</h3>
-				<p>[Content]</p>
+				<p>The data behind this website were gathered from verious research papers and journal articles. Sources are linked with the data throughout this website.</p>
 			</div>
 		</div>
 		<br>
-		<div class='center-text'>
+		<!-- <div class='center-text'>
 			<a href="https://github.com/ervinkellym/AllergensInHumanMilk">About This Project</a>
-		</div>
+		</div> -->
 	</div>
 </div>
 
