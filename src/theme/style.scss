@@ -48,7 +48,7 @@ h3, h4, h5, h6 { color: $dark-teal; }
 
 h4, h5, h6 {
     font-family: 'Josefin Sans', sans-serif;
-    padding: 20px;
+    padding: 10px;
 }
 
 a, a:visited, button, p, span, ul, li  {
@@ -149,7 +149,7 @@ button { cursor: pointer; }
         max-width: 85vw;
         max-height: 40vh;
     }
-    padding: 2vh;
+    padding: 0 2vh 0 2vh;
 }
 
 .mdc-dialog .mdc-dialog__surface { background-color: $background !important; }
@@ -158,3 +158,5 @@ button { cursor: pointer; }
     text-align: center;
     display: block;
 }
+
+.indented-list { padding: 0px 30px 5px 40px; }

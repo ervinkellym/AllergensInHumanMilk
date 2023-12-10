@@ -258,7 +258,7 @@
 							<Chart options = { peakOptions } bind:this = { chart1 }/>
 						</div>
 						<h4>These allergens peak in human milk in</h4>
-						<ul style="padding: 0px 30px 20px 40px">
+						<ul class='indented-list'>
 							<li>Cow's Milk: 2-6 hours</li>
 							<li>Egg: 4-6 hours</li>
 							<li>Wheat: 2-4 hours</li>
@@ -271,7 +271,7 @@
 							<Chart options = { untraceableOptions } bind:this = { chart2 }/>
 						</div>
 						<h4>These allergens are untraceable in human milk in</h4>
-						<ul style="padding: 0px 30px 20px 40px">
+						<ul class='indented-list'>
 							<li>Cow's Milk: 6 hours</li>
 							<li>Egg: Less than 24 hours</li>
 							<li>Wheat: Less than 72 hours</li>
