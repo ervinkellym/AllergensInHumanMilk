@@ -39,7 +39,10 @@ h1, h2 {
   padding-top: 5px;
 }
 
-h1 { color: $light-yellow; }
+h1 { 
+  color: $light-yellow;
+  font-size: 1.5em !important; 
+}
 
 h2 { color: $dark-yellow !important; }
 

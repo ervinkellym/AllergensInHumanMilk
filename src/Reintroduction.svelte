@@ -220,9 +220,9 @@
 		<div class='wide-content-wrapper'>
 			<div class='wide-content'>
 				<h3>Food Reintroduction Ladders</h3>
-				<p>Reintroduction ladders can determine if a child now tolerates a food to which they have had a non-IgE mediated (delayed) reaction. You must not start a reintroduction ladder unless your child's physician explicitly advises it. Reintroduction ladders are unsafe for children with IgE-mediated (immediate) allergic reactions.</p>
+				<p>Reintroduction ladders can determine if a child now tolerates a food to which they have had a non-IgE mediated (delayed) reaction. You must not start a reintroduction ladder unless your child's healthcare provider explicitly advises it. Reintroduction ladders are unsafe for children with IgE-mediated (immediate) allergic reactions.</p>
 				<p>Reintroduction ladders use a stepped approach to introducing an allergen. The food is cooked differently on each ladder rung to break it down a certain amount. The child eats an increasing amount of the food each day while on that ladder rung. They can move on to the next rung if they do not react to the food.</p>
-				<p>Here are some sample reintroduction ladders. You should use the ladder that your child's physician prescribes.</p>
+				<p>Here are some sample reintroduction ladders. You should use the ladder that your child's healthcare provider prescribes.</p>
 			</div>
 		</div>
 		<div class='card-container wide-content'>

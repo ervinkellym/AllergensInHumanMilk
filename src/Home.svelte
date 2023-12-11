@@ -117,7 +117,7 @@
 			<div class='text-with-img medium-content'>
 				<h3>What is this site?</h3>
 				<p>A resource for parents of infants consuming human milk (breastfeeding, chestfeeding, and drinking pumped milk) who may have infant food allergies.</p>
-				<p>This site is not a diagnostic tool and does not constitute medical advice. Always consult with a physician before making changes that may affect your or your child's health.</p>
+				<p>This site is not a diagnostic tool and does not constitute medical advice. Always consult your healthcare provider before making changes that may affect your or your child's health.</p>
 			</div>
 			<div class='img-with-text'>
 				<img src={ YellowBlueChestfeeding } alt=''>
@@ -129,20 +129,20 @@
 				<h4 style="color: {dark_yellow};">Useful if you are currently breastfeeding, chestfeeding, or feeding pumped milk:</h4>
 				<h4>1) Signs & Symptoms</h4>
 				<p>Symptoms of infant food allergies and other possible causes of those symptoms.</p>
-				<h4>2) Protein Persistence</h4>
+				<h4>2) Allergen Timelines</h4>
 				<p>Interactive visuals showing how long allergenic food proteins may stay in your milk after consumption. These can be filtered by food so that you can customize the visuals to your child's allergies.</p>
 				<h4 style="color: {dark_yellow};">Useful for all parents of children with food allergies:</h4>
 				<h4>3) Reintroduction</h4>
 				<p>How many children with infant & childhood food allergies will outgrow them and reintroduction ladders for major food allergens.</p>
 
 				<h3>Why is this information important?</h3>
-				<p>This subject is underresearched, and the available research is difficult for most people to access and understand. Many physicians lack education in this area, so recommendations can vary, and some advice based on outdated knowledge can even be harmful.</p>
+				<p>This subject is underresearched, and the available research is difficult for most people to access and understand. Many healthcare providerss lack education in this area, so recommendations can vary, and some advice based on outdated knowledge can even be harmful.</p>
 			</div>
 		</div>
 		<div>
 			<div class="card-container">
 				<div class="card">
-					<h3>Physician Recommendations for Chestfeeding Infants with Allergies</h3>
+					<h3>Healthcare Provider Recommendations for Chestfeeding Infants with Allergies</h3>
 					<div class="chart">
 						<Chart options={ options } bind:this={pieChart}/>
 					</div>
@@ -157,7 +157,7 @@
 					<div class='center-text'>
 						<a href='https://www.annallergy.org/article/S1081-1206(21)00133-2/fulltext' target='_blank'>[Annals of Allergy, Asthma, and Immunology, 2021]</a>
 					</div>
-					<p>Feeding your child your milk while consuming a food they are allergic to could be harmful. Before making any dietary changes, consult with a physician.</p>
+					<p>Feeding your child your milk while consuming a food they are allergic to could be harmful. Before making any dietary changes, consult with your healthcare provider.</p>
 				</div>
 			</div>
 		</div>

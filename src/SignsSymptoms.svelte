@@ -1,6 +1,7 @@
 <script>
 	import YellowChestfeeding from '/src/assets/YellowChestfeeding.jpeg';
 	import YellowPumping from '/src/assets/YellowPumping.jpeg';
+	import BlueYellowChestfeeding from '/src/assets/BlueYellowChestfeeding.jpeg';
 </script>
 
 <div class="tab-content">
@@ -8,7 +9,7 @@
 		<div class='wide-content-wrapper'>
 			<div class = 'wide-content'>
 				<h2>Figuring Out The Cause of Your Baby's Symptoms</h2>
-				<p>Figuring out the cause of your baby's symptoms is challenging. If you suspect a food allergy or intolerance, you can start keeping a food and reaction log. Watch for patterns and discuss your baby's symptoms with their physician.</p>
+				<p>Figuring out the cause of your baby's symptoms is challenging. If you suspect a food allergy or intolerance, you can start keeping a food and reaction log. Watch for patterns and discuss your baby's symptoms with their healthcare provider.</p>
 			</div>
 		</div>
 		<div class='card-container'>
@@ -59,7 +60,7 @@
 			</div>
 			<div class='text-with-img'>
 				<h3 style='padding-top:0px !important;'>Immediate Reactions</h3>
-				<p class='center-text' style='padding-top: 0px;'>Occur in 0 to 2 hours. If your baby has any symptoms of anaphylaxis, seek medical care immediately.</p>
+				<p class='center-text' style='padding-top: 0px;'>Occur in 0 to 2 hours. If your baby has any symptoms of <a style="padding:0px;" href='https://www.auvi-q.com/pdf/signs-symptoms-babies.pdf' target='_blank'>anaphylaxis</a>, a life threatening allergic reaction, seek medical care immediately.</p>
 				<h4>When drinking human milk:</h4>
 				<ul class='indented-list'>
 					<li>Pulling away, arching back, & screaming after a minute or two</li>
@@ -128,19 +129,31 @@
 		<br>
 		<div class='text-img-container'>
 			<div class='img-with-text'>
-				<img src={ YellowPumping } alt=''>
+				<img src={ BlueYellowChestfeeding } alt=''>
 			</div>
 			<div class = 'text-with-img'>
 				<h3>Other Causes of Symptoms</h3>
-				<p>Your infant's symptoms could also be caused by any of the following. If you have any concerns, consult with your child's physician.</p>
+				<p>Your infant's symptoms could also be caused by any of the following. If you have any concerns, consult with your child's healthcare provider.</p>
 				<ul class='indented-list'>
 					<li>Not enough milk: fussiness and slow weight gain. Other symptoms include not enough wet and dirty diapers.</li>
 					<li>Too much milk and a fast letdown: rapid weight gain, colic, fussiness while eating, and arching away when milk lets down.</li>
 					<li>Thrush: fussiness while eating, a sore and itchy mouth, and sometimes diaper rash.</li>
 					<li>Reflux disease (GERD/GOR): excessive vomiting/spitting up, inconsolable crying, refusal to eat, and slow weight gain.</li>
 					<li>Pyloric Stenosis: projectile vomiting starting between 2 and 6 weeks and increasing in frequency, and slow weight gain.</li>
-					<li>Illnesses: fever, vomiting, and diarrhea. (If your baby is younger than three months old, contact their physician for any fever.)</li>
+					<li>Illnesses: fever, vomiting, and diarrhea. (If your baby is younger than three months old, contact their healthcare provider for any fever.)</li>
 				</ul>
+			</div>
+		</div>
+		<br>
+		<br>
+		<div class='wide-content-wrapper'>
+			<div class='medium-content center-text'>
+				<h4>Sources</h4>
+				<a href='https://www.laleche.org.uk/allergies/' target='_blank'>La Leche League UK - Human Milk & Allergies</a>
+				<br>
+				<a href='https://www.laleche.org.uk/unhappy-baby/' target='_blank'>La Leche League UK - Other Causes of Symptoms</a>
+				<br>
+				<a href='https://www.foodallergy.org/living-food-allergies/food-allergy-essentials/common-allergens' target='_blank'>Food Allergy Research & Education - Top 9 Allergens</a>
 			</div>
 		</div>
 		<br>
