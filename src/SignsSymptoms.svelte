@@ -19,7 +19,7 @@
 					<li>Cow's Milk and Dairy Products: can include other mammalian milk like sheep and goat.</li>
 					<li>Egg</li>
 					<li>Peanut</li>
-					<li>Soy(a)</li>
+					<li>Soy</li>
 					<li>Wheat</li>
 					<li>Tree Nut: can include walnuts, almonds, hazelnuts, cashews, pistachios, and Brazil nuts. Does not include coconut.</li>
 					<li>Shellfish:</li>

@@ -407,7 +407,7 @@
 		<h4>Presence of High Levels of Non-Degraded Gliadin in Breast Milk from Healthy Mothers</h4>
 		<p>In another study, 49 participants with unrestricted diets collected their milk. All milk samples contained the wheat protein Gliadin. Six participants went on a wheat-free diet for three days, and the wheat protein Gliadin was no longer detectable in their milk. Gliadin could take less than 72 hours to become undetectable in human milk, but this study did not collect that information.</p>
 		<div class='center-text'>
-			<a href='https://pubmed.ncbi.nlm.nih.gov/3300148/' target='_blank'>[Scandanavian Journal of Gastroenterology, 1998]</a>
+			<a href='https://pubmed.ncbi.nlm.nih.gov/3300148/' target='_blank'>[Scandinavian Journal of Gastroenterology, 1998]</a>
 			<a href='https://sci-hub.se/10.1080/00365529850172557' target='_blank'>[Full Text]</a>
 		</div>
 		<h4>More Resources</h4>

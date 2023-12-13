@@ -120,7 +120,7 @@
 				<p>This site is not a diagnostic tool and does not constitute medical advice. Always consult your healthcare provider before making changes that may affect your or your child's health.</p>
 			</div>
 			<div class='img-with-text'>
-				<img src={ YellowBlueChestfeeding } alt=''>
+				<img style='padding-top: 20px;' src={ YellowBlueChestfeeding } alt=''>
 			</div>
 		</div>
 		<div class='wide-content-wrapper'>
@@ -136,7 +136,7 @@
 				<p>How many children with infant & childhood food allergies will outgrow them and reintroduction ladders for major food allergens.</p>
 
 				<h3>Why is this information important?</h3>
-				<p>This subject is underresearched, and the available research is difficult for most people to access and understand. Many healthcare providerss lack education in this area, so recommendations can vary, and some advice based on outdated knowledge can even be harmful.</p>
+				<p>This subject is underresearched, and the available research is difficult for most people to access and understand. Many healthcare providers lack education in this area, so recommendations can vary, and some advice based on outdated knowledge can even be harmful.</p>
 			</div>
 		</div>
 		<div>
@@ -164,7 +164,11 @@
 		<div class='wide-content-wrapper'>
 			<div class='wider-content'>
 				<h3>Where is the data from?</h3>
-				<p>The data in this website were gathered from various research papers and journal articles. Sources are linked throughout this website.</p>
+				<p>The data in this website were gathered from various research papers and journal articles. Sources are linked where they are used throughout this website.</p>
+				<br>
+				<p class='center-text'>Illustration Credit: Canva</p>
+				<br>
+				<a href='https://github.com/ervinkellym/AllergensInHumanMilk' target='_blank' class='center-text'>Created by Kelly Ervin Mills</a>
 			</div>
 		</div>
 		<br>
